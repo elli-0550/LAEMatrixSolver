@@ -118,16 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="open-bracket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\open-bracket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sigma" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sigma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="matrix" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\matrix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="premium_photo-1701596398941-6ace5c11d0af" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\premium_photo-1701596398941-6ace5c11d0af.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="matrix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\matrix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="axis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\axis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Classic Black Matrix Brackets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Classic Black Matrix Brackets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

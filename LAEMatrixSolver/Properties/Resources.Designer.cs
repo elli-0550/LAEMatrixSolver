@@ -73,9 +73,29 @@ namespace LAEMatrixSolver.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Classic_Black_Matrix_Brackets {
+            get {
+                object obj = ResourceManager.GetObject("Classic Black Matrix Brackets", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap matrix {
             get {
                 object obj = ResourceManager.GetObject("matrix", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap open_bracket {
+            get {
+                object obj = ResourceManager.GetObject("open-bracket", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,6 +1,6 @@
 ﻿namespace LAEMatrixSolver.Properties
 {
-    partial class Frmdash
+    partial class Frm2x2Empty
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frmdash));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm2x2Empty));
             panel1 = new Panel();
             label2 = new Label();
             label1 = new Label();
@@ -80,15 +80,15 @@
             panel3 = new Panel();
             tblSol = new TableLayoutPanel();
             panel12 = new Panel();
-            label28 = new Label();
+            lblConstants = new Label();
             label21 = new Label();
             label22 = new Label();
             panel13 = new Panel();
-            label29 = new Label();
+            lblCompute = new Label();
             label23 = new Label();
             label24 = new Label();
             panel14 = new Panel();
-            label30 = new Label();
+            lblSolSys = new Label();
             label26 = new Label();
             panel5 = new Panel();
             label9 = new Label();
@@ -222,12 +222,13 @@
             btnClr.BackColor = Color.Azure;
             btnClr.FlatStyle = FlatStyle.Flat;
             btnClr.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnClr.Location = new Point(1365, 7);
+            btnClr.Location = new Point(1153, 10);
             btnClr.Name = "btnClr";
             btnClr.Size = new Size(127, 47);
             btnClr.TabIndex = 9;
             btnClr.Text = "\t↻ Clear";
             btnClr.UseVisualStyleBackColor = false;
+            btnClr.Click += btnClr_Click;
             // 
             // btnSolve
             // 
@@ -236,12 +237,13 @@
             btnSolve.FlatStyle = FlatStyle.Flat;
             btnSolve.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSolve.ForeColor = Color.White;
-            btnSolve.Location = new Point(1211, 7);
+            btnSolve.Location = new Point(1286, 10);
             btnSolve.Name = "btnSolve";
             btnSolve.Size = new Size(133, 47);
             btnSolve.TabIndex = 8;
             btnSolve.Text = "▶  Solve";
             btnSolve.UseVisualStyleBackColor = false;
+            btnSolve.Click += btnSolve_Click;
             // 
             // btnBack
             // 
@@ -249,7 +251,8 @@
             btnBack.BackColor = Color.Azure;
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnBack.Location = new Point(1030, 8);
+            btnBack.ForeColor = SystemColors.ActiveCaption;
+            btnBack.Location = new Point(1425, 9);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(163, 47);
             btnBack.TabIndex = 7;
@@ -301,6 +304,7 @@
             rb3x3.TabIndex = 2;
             rb3x3.Text = "3 x 3";
             rb3x3.UseVisualStyleBackColor = true;
+            rb3x3.CheckedChanged += rb3x3_CheckedChanged;
             // 
             // rb2x2
             // 
@@ -729,7 +733,7 @@
             // panel12
             // 
             panel12.BackColor = Color.Azure;
-            panel12.Controls.Add(label28);
+            panel12.Controls.Add(lblConstants);
             panel12.Controls.Add(label21);
             panel12.Controls.Add(label22);
             panel12.Dock = DockStyle.Fill;
@@ -738,21 +742,25 @@
             panel12.Size = new Size(634, 166);
             panel12.TabIndex = 0;
             // 
-            // label28
+            // lblConstants
             // 
-            label28.AutoSize = true;
-            label28.Location = new Point(280, 87);
-            label28.Name = "label28";
-            label28.Size = new Size(58, 20);
-            label28.TabIndex = 4;
-            label28.Text = "label28";
+            lblConstants.BackColor = Color.LightCyan;
+            lblConstants.Dock = DockStyle.Fill;
+            lblConstants.Font = new Font("Nirmala UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblConstants.ForeColor = Color.FromArgb(40, 65, 95);
+            lblConstants.Location = new Point(0, 28);
+            lblConstants.Name = "lblConstants";
+            lblConstants.Size = new Size(634, 138);
+            lblConstants.TabIndex = 4;
+            lblConstants.Text = "Enter your equations and click Solve\r\nto view the constants matrix";
+            lblConstants.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label21
             // 
             label21.AutoSize = true;
             label21.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label21.ForeColor = Color.FromArgb(40, 65, 95);
-            label21.Location = new Point(205, 15);
+            label21.Location = new Point(193, 6);
             label21.Name = "label21";
             label21.Size = new Size(23, 23);
             label21.TabIndex = 3;
@@ -761,9 +769,10 @@
             // label22
             // 
             label22.AutoSize = true;
+            label22.Dock = DockStyle.Top;
             label22.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label22.ForeColor = Color.FromArgb(40, 65, 95);
-            label22.Location = new Point(12, 10);
+            label22.Location = new Point(0, 0);
             label22.Name = "label22";
             label22.Size = new Size(197, 28);
             label22.TabIndex = 2;
@@ -772,7 +781,7 @@
             // panel13
             // 
             panel13.BackColor = Color.Azure;
-            panel13.Controls.Add(label29);
+            panel13.Controls.Add(lblCompute);
             panel13.Controls.Add(label23);
             panel13.Controls.Add(label24);
             panel13.Dock = DockStyle.Fill;
@@ -781,21 +790,25 @@
             panel13.Size = new Size(634, 553);
             panel13.TabIndex = 1;
             // 
-            // label29
+            // lblCompute
             // 
-            label29.AutoSize = true;
-            label29.Location = new Point(311, 279);
-            label29.Name = "label29";
-            label29.Size = new Size(58, 20);
-            label29.TabIndex = 4;
-            label29.Text = "label29";
+            lblCompute.BackColor = Color.LightCyan;
+            lblCompute.Dock = DockStyle.Fill;
+            lblCompute.Font = new Font("Nirmala UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCompute.ForeColor = Color.FromArgb(40, 65, 95);
+            lblCompute.Location = new Point(0, 28);
+            lblCompute.Name = "lblCompute";
+            lblCompute.Size = new Size(634, 525);
+            lblCompute.TabIndex = 4;
+            lblCompute.Text = "Enter your equations and click Solve\r\nto view the computation of X";
+            lblCompute.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label23
             // 
             label23.AutoSize = true;
             label23.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label23.ForeColor = Color.FromArgb(40, 65, 95);
-            label23.Location = new Point(128, 16);
+            label23.Location = new Point(114, 5);
             label23.Name = "label23";
             label23.Size = new Size(86, 23);
             label23.TabIndex = 3;
@@ -804,9 +817,10 @@
             // label24
             // 
             label24.AutoSize = true;
+            label24.Dock = DockStyle.Top;
             label24.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.FromArgb(40, 65, 95);
-            label24.Location = new Point(12, 9);
+            label24.Location = new Point(0, 0);
             label24.Name = "label24";
             label24.Size = new Size(126, 28);
             label24.TabIndex = 2;
@@ -815,7 +829,7 @@
             // panel14
             // 
             panel14.BackColor = Color.Azure;
-            panel14.Controls.Add(label30);
+            panel14.Controls.Add(lblSolSys);
             panel14.Controls.Add(label26);
             panel14.Dock = DockStyle.Fill;
             panel14.Location = new Point(3, 734);
@@ -823,25 +837,30 @@
             panel14.Size = new Size(634, 123);
             panel14.TabIndex = 2;
             // 
-            // label30
+            // lblSolSys
             // 
-            label30.AutoSize = true;
-            label30.Location = new Point(298, 42);
-            label30.Name = "label30";
-            label30.Size = new Size(58, 20);
-            label30.TabIndex = 3;
-            label30.Text = "label30";
+            lblSolSys.BackColor = Color.LightCyan;
+            lblSolSys.Dock = DockStyle.Fill;
+            lblSolSys.Font = new Font("Nirmala UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblSolSys.ForeColor = Color.FromArgb(40, 65, 95);
+            lblSolSys.Location = new Point(0, 28);
+            lblSolSys.Name = "lblSolSys";
+            lblSolSys.Size = new Size(634, 95);
+            lblSolSys.TabIndex = 3;
+            lblSolSys.Text = "Enter your equations and click Solve\r\nto view the solution of the system";
+            lblSolSys.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label26
             // 
             label26.AutoSize = true;
+            label26.Dock = DockStyle.Top;
             label26.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label26.ForeColor = Color.FromArgb(40, 65, 95);
-            label26.Location = new Point(12, 17);
+            label26.Location = new Point(0, 0);
             label26.Name = "label26";
-            label26.Size = new Size(114, 28);
+            label26.Size = new Size(251, 28);
             label26.TabIndex = 2;
-            label26.Text = "8. Solution";
+            label26.Text = "8. Solution of the System";
             // 
             // panel5
             // 
@@ -892,7 +911,7 @@
             fileSystemWatcher1.EnableRaisingEvents = true;
             fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // Frmdash
+            // Frm2x2Empty
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -906,8 +925,10 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "Frmdash";
+            Name = "Frm2x2Empty";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LAE Matrix Solver";
+            WindowState = FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
@@ -1013,8 +1034,8 @@
         private Label lblCof;
         private Label lblAdj;
         private Label lblInvRes;
-        private Label label28;
-        private Label label29;
-        private Label label30;
+        private Label lblConstants;
+        private Label lblCompute;
+        private Label lblSolSys;
     }
 }

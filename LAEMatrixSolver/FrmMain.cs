@@ -23,7 +23,7 @@ namespace LAEMatrixSolver
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Frmdash dashForm = new Frmdash();
+            Frm2x2Empty dashForm = new Frm2x2Empty();
             dashForm.FormClosed += (s, args) => this.Close();
             dashForm.Show();
             this.Hide();
