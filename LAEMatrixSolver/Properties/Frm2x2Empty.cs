@@ -40,11 +40,9 @@ namespace LAEMatrixSolver.Properties
             {
                 Frm3x3Empty form4 = new Frm3x3Empty();
 
-                form4.FormClosed += (s, args) => this.Close();
-                form4.Show();
                 this.Hide();
-
-                rb2x2.Checked = true;
+                form4.ShowDialog();
+                this.Close();
             }
         }
     }
