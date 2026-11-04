@@ -53,9 +53,9 @@ namespace LAEMatrixSolver.Properties
 
             Frm2x2Solved form3 = new Frm2x2Solved();
 
-            form3.FormClosed += (s, args) => this.Close();
-            form3.Show();
             this.Hide();
+            form3.ShowDialog();
+            this.Show();
         }
 
         private void btnClr_Click(object sender, EventArgs e)
