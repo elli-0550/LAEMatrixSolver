@@ -19,12 +19,17 @@ namespace LAEMatrixSolver.Properties
 
         private void btnSolve_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void btnClr_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void rb2x2_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
