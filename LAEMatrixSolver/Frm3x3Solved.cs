@@ -5,10 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using System.Globalization;
-using System.Text.RegularExpressions;
 
-namespace LAEMatrixSolver.Properties
+namespace LAEMatrixSolver
 {
     public partial class Frm3x3Solved : Form
     {
@@ -17,19 +15,44 @@ namespace LAEMatrixSolver.Properties
             InitializeComponent();
         }
 
-        private void btnSolve_Click(object sender, EventArgs e)
+        private void label46_Click(object sender, EventArgs e)
+        {
+            //none
+        }
+
+        private void label68_Click(object sender, EventArgs e)
+        {
+            //none
+        }
+
+        private void lblC11_Click(object sender, EventArgs e)
+        {
+            //none
+        }
+
+        private void pnlInvRes_Paint(object sender, PaintEventArgs e)
+        {
+            //none
+        }
+
+        private void label158_Click(object sender, EventArgs e)
+        {
+            //none
+        }
+
+        private void panel13_Paint(object sender, PaintEventArgs e)
+        {
+            //none
+        }
+
+        private void label176_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnClr_Click(object sender, EventArgs e)
+        private void label103_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void rb2x2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+        } 
     }
 }

@@ -155,6 +155,14 @@ namespace LAEMatrixSolver.Properties
 
 
         }
+
+        private void txtBoxEq3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
+
+
     
