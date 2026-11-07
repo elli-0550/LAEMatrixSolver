@@ -118,22 +118,22 @@
             label18 = new Label();
             pnlInvRes = new Panel();
             label96 = new Label();
-            label90 = new Label();
-            label91 = new Label();
-            label92 = new Label();
-            label93 = new Label();
+            lblInv22 = new Label();
+            lblInv21 = new Label();
+            lblInv12 = new Label();
+            lblInv11 = new Label();
             label94 = new Label();
             label95 = new Label();
-            label84 = new Label();
-            label85 = new Label();
-            label86 = new Label();
-            label87 = new Label();
+            lblInvC22 = new Label();
+            lblInvC12 = new Label();
+            lblInvC21 = new Label();
+            lblInvC11 = new Label();
             label88 = new Label();
             label89 = new Label();
             label83 = new Label();
-            label82 = new Label();
+            lblDetA1 = new Label();
             label81 = new Label();
-            label80 = new Label();
+            lblDetA = new Label();
             label79 = new Label();
             label78 = new Label();
             label76 = new Label();
@@ -157,37 +157,37 @@
             label22 = new Label();
             panel13 = new Panel();
             label121 = new Label();
-            label123 = new Label();
-            label127 = new Label();
+            SolY = new Label();
+            SolX = new Label();
             label128 = new Label();
             label129 = new Label();
             label120 = new Label();
-            label109 = new Label();
-            label110 = new Label();
+            lblX2 = new Label();
+            lblX1 = new Label();
             label111 = new Label();
             label112 = new Label();
-            label98 = new Label();
-            label100 = new Label();
+            lblCon21 = new Label();
+            lblCon11 = new Label();
             label102 = new Label();
             label103 = new Label();
             label119 = new Label();
-            label113 = new Label();
-            label114 = new Label();
-            label115 = new Label();
-            label116 = new Label();
+            lblX22 = new Label();
+            lblX21 = new Label();
+            lblX12 = new Label();
+            lblX11 = new Label();
             label117 = new Label();
             label118 = new Label();
             label97 = new Label();
-            label99 = new Label();
-            label104 = new Label();
-            label105 = new Label();
-            label106 = new Label();
+            lblInvMat22 = new Label();
+            lblInvMat21 = new Label();
+            lblInvMat12 = new Label();
+            lblInvMat11 = new Label();
             label107 = new Label();
             label108 = new Label();
             label23 = new Label();
             label24 = new Label();
             panel14 = new Panel();
-            label130 = new Label();
+            SolSys = new Label();
             label26 = new Label();
             panel5 = new Panel();
             label9 = new Label();
@@ -815,7 +815,6 @@
             // 
             // lblCof22
             // 
-            lblCof22.AutoSize = true;
             lblCof22.Font = new Font("Times New Roman", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblCof22.Location = new Point(354, 229);
             lblCof22.Name = "lblCof22";
@@ -853,7 +852,6 @@
             // 
             // lblC22
             // 
-            lblC22.AutoSize = true;
             lblC22.Font = new Font("Times New Roman", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblC22.Location = new Point(354, 189);
             lblC22.Name = "lblC22";
@@ -882,7 +880,6 @@
             // 
             // lblCof12
             // 
-            lblCof12.AutoSize = true;
             lblCof12.Font = new Font("Times New Roman", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblCof12.Location = new Point(354, 128);
             lblCof12.Name = "lblCof12";
@@ -920,7 +917,6 @@
             // 
             // lblC12
             // 
-            lblC12.AutoSize = true;
             lblC12.BackColor = Color.Transparent;
             lblC12.Font = new Font("Times New Roman", 13F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblC12.Location = new Point(363, 87);
@@ -950,9 +946,8 @@
             // 
             // lblCof21
             // 
-            lblCof21.AutoSize = true;
             lblCof21.Font = new Font("Times New Roman", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCof21.Location = new Point(147, 229);
+            lblCof21.Location = new Point(151, 227);
             lblCof21.Name = "lblCof21";
             lblCof21.Size = new Size(44, 26);
             lblCof21.TabIndex = 20;
@@ -988,7 +983,6 @@
             // 
             // lblC21
             // 
-            lblC21.AutoSize = true;
             lblC21.BackColor = Color.Transparent;
             lblC21.Font = new Font("Times New Roman", 13F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblC21.Location = new Point(159, 189);
@@ -1056,7 +1050,6 @@
             // 
             // lblC11
             // 
-            lblC11.AutoSize = true;
             lblC11.BackColor = Color.Transparent;
             lblC11.Font = new Font("Times New Roman", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblC11.Location = new Point(149, 92);
@@ -1229,22 +1222,22 @@
             // 
             pnlInvRes.BackColor = Color.Azure;
             pnlInvRes.Controls.Add(label96);
-            pnlInvRes.Controls.Add(label90);
-            pnlInvRes.Controls.Add(label91);
-            pnlInvRes.Controls.Add(label92);
-            pnlInvRes.Controls.Add(label93);
+            pnlInvRes.Controls.Add(lblInv22);
+            pnlInvRes.Controls.Add(lblInv21);
+            pnlInvRes.Controls.Add(lblInv12);
+            pnlInvRes.Controls.Add(lblInv11);
             pnlInvRes.Controls.Add(label94);
             pnlInvRes.Controls.Add(label95);
-            pnlInvRes.Controls.Add(label84);
-            pnlInvRes.Controls.Add(label85);
-            pnlInvRes.Controls.Add(label86);
-            pnlInvRes.Controls.Add(label87);
+            pnlInvRes.Controls.Add(lblInvC22);
+            pnlInvRes.Controls.Add(lblInvC12);
+            pnlInvRes.Controls.Add(lblInvC21);
+            pnlInvRes.Controls.Add(lblInvC11);
             pnlInvRes.Controls.Add(label88);
             pnlInvRes.Controls.Add(label89);
             pnlInvRes.Controls.Add(label83);
-            pnlInvRes.Controls.Add(label82);
+            pnlInvRes.Controls.Add(lblDetA1);
             pnlInvRes.Controls.Add(label81);
-            pnlInvRes.Controls.Add(label80);
+            pnlInvRes.Controls.Add(lblDetA);
             pnlInvRes.Controls.Add(label79);
             pnlInvRes.Controls.Add(label78);
             pnlInvRes.Controls.Add(label76);
@@ -1272,49 +1265,49 @@
             label96.Text = "A⁻¹=  ";
             label96.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label90
+            // lblInv22
             // 
-            label90.AutoSize = true;
-            label90.BackColor = Color.LightCyan;
-            label90.Font = new Font("Times New Roman", 13.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label90.Location = new Point(255, 256);
-            label90.Name = "label90";
-            label90.Size = new Size(32, 26);
-            label90.TabIndex = 59;
-            label90.Text = "i₂₂";
+            lblInv22.AutoSize = true;
+            lblInv22.BackColor = Color.LightCyan;
+            lblInv22.Font = new Font("Times New Roman", 13.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblInv22.Location = new Point(255, 256);
+            lblInv22.Name = "lblInv22";
+            lblInv22.Size = new Size(32, 26);
+            lblInv22.TabIndex = 59;
+            lblInv22.Text = "i₂₂";
             // 
-            // label91
+            // lblInv21
             // 
-            label91.AutoSize = true;
-            label91.BackColor = Color.LightCyan;
-            label91.Font = new Font("Times New Roman", 13.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label91.Location = new Point(185, 257);
-            label91.Name = "label91";
-            label91.Size = new Size(32, 26);
-            label91.TabIndex = 58;
-            label91.Text = "i₂₁";
+            lblInv21.AutoSize = true;
+            lblInv21.BackColor = Color.LightCyan;
+            lblInv21.Font = new Font("Times New Roman", 13.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblInv21.Location = new Point(185, 257);
+            lblInv21.Name = "lblInv21";
+            lblInv21.Size = new Size(32, 26);
+            lblInv21.TabIndex = 58;
+            lblInv21.Text = "i₂₁";
             // 
-            // label92
+            // lblInv12
             // 
-            label92.AutoSize = true;
-            label92.BackColor = Color.LightCyan;
-            label92.Font = new Font("Times New Roman", 13.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label92.Location = new Point(255, 213);
-            label92.Name = "label92";
-            label92.Size = new Size(32, 26);
-            label92.TabIndex = 57;
-            label92.Text = "i₁₂";
+            lblInv12.AutoSize = true;
+            lblInv12.BackColor = Color.LightCyan;
+            lblInv12.Font = new Font("Times New Roman", 13.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblInv12.Location = new Point(255, 213);
+            lblInv12.Name = "lblInv12";
+            lblInv12.Size = new Size(32, 26);
+            lblInv12.TabIndex = 57;
+            lblInv12.Text = "i₁₂";
             // 
-            // label93
+            // lblInv11
             // 
-            label93.AutoSize = true;
-            label93.BackColor = Color.LightCyan;
-            label93.Font = new Font("Times New Roman", 13.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label93.Location = new Point(187, 213);
-            label93.Name = "label93";
-            label93.Size = new Size(32, 26);
-            label93.TabIndex = 55;
-            label93.Text = "i₁₁";
+            lblInv11.AutoSize = true;
+            lblInv11.BackColor = Color.LightCyan;
+            lblInv11.Font = new Font("Times New Roman", 13.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblInv11.Location = new Point(187, 213);
+            lblInv11.Name = "lblInv11";
+            lblInv11.Size = new Size(32, 26);
+            lblInv11.TabIndex = 55;
+            lblInv11.Text = "i₁₁";
             // 
             // label94
             // 
@@ -1342,45 +1335,45 @@
             label95.Text = "]";
             label95.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label84
+            // lblInvC22
             // 
-            label84.AutoSize = true;
-            label84.Font = new Font("Times New Roman", 10.8F);
-            label84.Location = new Point(256, 155);
-            label84.Name = "label84";
-            label84.Size = new Size(31, 20);
-            label84.TabIndex = 53;
-            label84.Text = "C₂₂";
+            lblInvC22.AutoSize = true;
+            lblInvC22.Font = new Font("Times New Roman", 10.8F);
+            lblInvC22.Location = new Point(256, 155);
+            lblInvC22.Name = "lblInvC22";
+            lblInvC22.Size = new Size(31, 20);
+            lblInvC22.TabIndex = 53;
+            lblInvC22.Text = "C₂₂";
             // 
-            // label85
+            // lblInvC12
             // 
-            label85.AutoSize = true;
-            label85.Font = new Font("Times New Roman", 10.8F);
-            label85.Location = new Point(186, 156);
-            label85.Name = "label85";
-            label85.Size = new Size(31, 20);
-            label85.TabIndex = 52;
-            label85.Text = "C₁₂";
+            lblInvC12.AutoSize = true;
+            lblInvC12.Font = new Font("Times New Roman", 10.8F);
+            lblInvC12.Location = new Point(186, 156);
+            lblInvC12.Name = "lblInvC12";
+            lblInvC12.Size = new Size(31, 20);
+            lblInvC12.TabIndex = 52;
+            lblInvC12.Text = "C₁₂";
             // 
-            // label86
+            // lblInvC21
             // 
-            label86.AutoSize = true;
-            label86.Font = new Font("Times New Roman", 10.8F);
-            label86.Location = new Point(256, 112);
-            label86.Name = "label86";
-            label86.Size = new Size(31, 20);
-            label86.TabIndex = 51;
-            label86.Text = "C₂₁";
+            lblInvC21.AutoSize = true;
+            lblInvC21.Font = new Font("Times New Roman", 10.8F);
+            lblInvC21.Location = new Point(256, 112);
+            lblInvC21.Name = "lblInvC21";
+            lblInvC21.Size = new Size(31, 20);
+            lblInvC21.TabIndex = 51;
+            lblInvC21.Text = "C₂₁";
             // 
-            // label87
+            // lblInvC11
             // 
-            label87.AutoSize = true;
-            label87.Font = new Font("Times New Roman", 10.8F);
-            label87.Location = new Point(187, 112);
-            label87.Name = "label87";
-            label87.Size = new Size(31, 20);
-            label87.TabIndex = 49;
-            label87.Text = "C₁₁";
+            lblInvC11.AutoSize = true;
+            lblInvC11.Font = new Font("Times New Roman", 10.8F);
+            lblInvC11.Location = new Point(187, 112);
+            lblInvC11.Name = "lblInvC11";
+            lblInvC11.Size = new Size(31, 20);
+            lblInvC11.TabIndex = 49;
+            lblInvC11.Text = "C₁₁";
             // 
             // label88
             // 
@@ -1418,17 +1411,17 @@
             label83.Text = "1";
             label83.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label82
+            // lblDetA1
             // 
-            label82.AutoSize = true;
-            label82.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label82.ForeColor = Color.Black;
-            label82.Location = new Point(111, 139);
-            label82.Name = "label82";
-            label82.Size = new Size(34, 22);
-            label82.TabIndex = 11;
-            label82.Text = "det\r\n";
-            label82.TextAlign = ContentAlignment.MiddleCenter;
+            lblDetA1.AutoSize = true;
+            lblDetA1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblDetA1.ForeColor = Color.Black;
+            lblDetA1.Location = new Point(111, 139);
+            lblDetA1.Name = "lblDetA1";
+            lblDetA1.Size = new Size(34, 22);
+            lblDetA1.TabIndex = 11;
+            lblDetA1.Text = "det\r\n";
+            lblDetA1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label81
             // 
@@ -1442,17 +1435,17 @@
             label81.Text = "= ──";
             label81.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label80
+            // lblDetA
             // 
-            label80.AutoSize = true;
-            label80.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label80.ForeColor = Color.Black;
-            label80.Location = new Point(123, 61);
-            label80.Name = "label80";
-            label80.Size = new Size(62, 22);
-            label80.TabIndex = 9;
-            label80.Text = "det(A)";
-            label80.TextAlign = ContentAlignment.MiddleCenter;
+            lblDetA.AutoSize = true;
+            lblDetA.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblDetA.ForeColor = Color.Black;
+            lblDetA.Location = new Point(123, 61);
+            lblDetA.Name = "lblDetA";
+            lblDetA.Size = new Size(62, 22);
+            lblDetA.TabIndex = 9;
+            lblDetA.Text = "det(A)";
+            lblDetA.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label79
             // 
@@ -1705,31 +1698,31 @@
             // 
             panel13.BackColor = Color.Azure;
             panel13.Controls.Add(label121);
-            panel13.Controls.Add(label123);
-            panel13.Controls.Add(label127);
+            panel13.Controls.Add(SolY);
+            panel13.Controls.Add(SolX);
             panel13.Controls.Add(label128);
             panel13.Controls.Add(label129);
             panel13.Controls.Add(label120);
-            panel13.Controls.Add(label109);
-            panel13.Controls.Add(label110);
+            panel13.Controls.Add(lblX2);
+            panel13.Controls.Add(lblX1);
             panel13.Controls.Add(label111);
             panel13.Controls.Add(label112);
-            panel13.Controls.Add(label98);
-            panel13.Controls.Add(label100);
+            panel13.Controls.Add(lblCon21);
+            panel13.Controls.Add(lblCon11);
             panel13.Controls.Add(label102);
             panel13.Controls.Add(label103);
             panel13.Controls.Add(label119);
-            panel13.Controls.Add(label113);
-            panel13.Controls.Add(label114);
-            panel13.Controls.Add(label115);
-            panel13.Controls.Add(label116);
+            panel13.Controls.Add(lblX22);
+            panel13.Controls.Add(lblX21);
+            panel13.Controls.Add(lblX12);
+            panel13.Controls.Add(lblX11);
             panel13.Controls.Add(label117);
             panel13.Controls.Add(label118);
             panel13.Controls.Add(label97);
-            panel13.Controls.Add(label99);
-            panel13.Controls.Add(label104);
-            panel13.Controls.Add(label105);
-            panel13.Controls.Add(label106);
+            panel13.Controls.Add(lblInvMat22);
+            panel13.Controls.Add(lblInvMat21);
+            panel13.Controls.Add(lblInvMat12);
+            panel13.Controls.Add(lblInvMat11);
             panel13.Controls.Add(label107);
             panel13.Controls.Add(label108);
             panel13.Controls.Add(label23);
@@ -1753,25 +1746,25 @@
             label121.Text = " X =";
             label121.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label123
+            // SolY
             // 
-            label123.AutoSize = true;
-            label123.Font = new Font("Times New Roman", 13.8F);
-            label123.Location = new Point(203, 393);
-            label123.Name = "label123";
-            label123.Size = new Size(37, 26);
-            label123.TabIndex = 88;
-            label123.Text = "x₂₁";
+            SolY.AutoSize = true;
+            SolY.Font = new Font("Times New Roman", 13.8F);
+            SolY.Location = new Point(203, 393);
+            SolY.Name = "SolY";
+            SolY.Size = new Size(37, 26);
+            SolY.TabIndex = 88;
+            SolY.Text = "x₂₁";
             // 
-            // label127
+            // SolX
             // 
-            label127.AutoSize = true;
-            label127.Font = new Font("Times New Roman", 13.8F);
-            label127.Location = new Point(205, 349);
-            label127.Name = "label127";
-            label127.Size = new Size(37, 26);
-            label127.TabIndex = 86;
-            label127.Text = "x₁₁";
+            SolX.AutoSize = true;
+            SolX.Font = new Font("Times New Roman", 13.8F);
+            SolX.Location = new Point(205, 349);
+            SolX.Name = "SolX";
+            SolX.Size = new Size(37, 26);
+            SolX.TabIndex = 86;
+            SolX.Text = "x₁₁";
             // 
             // label128
             // 
@@ -1810,25 +1803,25 @@
             label120.Text = " =";
             label120.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label109
+            // lblX2
             // 
-            label109.AutoSize = true;
-            label109.Font = new Font("Times New Roman", 13.8F);
-            label109.Location = new Point(203, 299);
-            label109.Name = "label109";
-            label109.Size = new Size(37, 26);
-            label109.TabIndex = 83;
-            label109.Text = "x₂₁";
+            lblX2.AutoSize = true;
+            lblX2.Font = new Font("Times New Roman", 13.8F);
+            lblX2.Location = new Point(203, 299);
+            lblX2.Name = "lblX2";
+            lblX2.Size = new Size(37, 26);
+            lblX2.TabIndex = 83;
+            lblX2.Text = "x₂₁";
             // 
-            // label110
+            // lblX1
             // 
-            label110.AutoSize = true;
-            label110.Font = new Font("Times New Roman", 13.8F);
-            label110.Location = new Point(205, 253);
-            label110.Name = "label110";
-            label110.Size = new Size(37, 26);
-            label110.TabIndex = 81;
-            label110.Text = "x₁₁";
+            lblX1.AutoSize = true;
+            lblX1.Font = new Font("Times New Roman", 13.8F);
+            lblX1.Location = new Point(205, 253);
+            lblX1.Name = "lblX1";
+            lblX1.Size = new Size(37, 26);
+            lblX1.TabIndex = 81;
+            lblX1.Text = "x₁₁";
             // 
             // label111
             // 
@@ -1848,34 +1841,34 @@
             label112.BackColor = Color.Transparent;
             label112.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label112.ForeColor = Color.Black;
-            label112.Location = new Point(229, 233);
+            label112.Location = new Point(230, 233);
             label112.Name = "label112";
             label112.Size = new Size(68, 95);
             label112.TabIndex = 84;
             label112.Text = "]";
             label112.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label98
+            // lblCon21
             // 
-            label98.AutoSize = true;
-            label98.BackColor = Color.Transparent;
-            label98.Font = new Font("Times New Roman", 13.8F);
-            label98.Location = new Point(360, 91);
-            label98.Name = "label98";
-            label98.Size = new Size(38, 26);
-            label98.TabIndex = 79;
-            label98.Text = "b₂₁";
+            lblCon21.AutoSize = true;
+            lblCon21.BackColor = Color.Transparent;
+            lblCon21.Font = new Font("Times New Roman", 13.8F);
+            lblCon21.Location = new Point(369, 91);
+            lblCon21.Name = "lblCon21";
+            lblCon21.Size = new Size(38, 26);
+            lblCon21.TabIndex = 79;
+            lblCon21.Text = "b₂₁";
             // 
-            // label100
+            // lblCon11
             // 
-            label100.AutoSize = true;
-            label100.BackColor = Color.Transparent;
-            label100.Font = new Font("Times New Roman", 13.8F);
-            label100.Location = new Point(362, 47);
-            label100.Name = "label100";
-            label100.Size = new Size(38, 26);
-            label100.TabIndex = 77;
-            label100.Text = "b₁₁";
+            lblCon11.AutoSize = true;
+            lblCon11.BackColor = Color.Transparent;
+            lblCon11.Font = new Font("Times New Roman", 13.8F);
+            lblCon11.Location = new Point(371, 47);
+            lblCon11.Name = "lblCon11";
+            lblCon11.Size = new Size(38, 26);
+            lblCon11.TabIndex = 77;
+            lblCon11.Text = "b₁₁";
             // 
             // label102
             // 
@@ -1883,7 +1876,7 @@
             label102.BackColor = Color.Transparent;
             label102.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label102.ForeColor = Color.Black;
-            label102.Location = new Point(317, 26);
+            label102.Location = new Point(326, 26);
             label102.Name = "label102";
             label102.Size = new Size(68, 95);
             label102.TabIndex = 78;
@@ -1896,7 +1889,7 @@
             label103.BackColor = Color.Transparent;
             label103.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label103.ForeColor = Color.Black;
-            label103.Location = new Point(382, 26);
+            label103.Location = new Point(391, 26);
             label103.Name = "label103";
             label103.Size = new Size(68, 95);
             label103.TabIndex = 80;
@@ -1915,45 +1908,45 @@
             label119.Text = " =";
             label119.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label113
+            // lblX22
             // 
-            label113.AutoSize = true;
-            label113.Font = new Font("Times New Roman", 13.8F);
-            label113.Location = new Point(249, 195);
-            label113.Name = "label113";
-            label113.Size = new Size(37, 26);
-            label113.TabIndex = 69;
-            label113.Text = "x₂₂";
+            lblX22.AutoSize = true;
+            lblX22.Font = new Font("Times New Roman", 13.8F);
+            lblX22.Location = new Point(249, 195);
+            lblX22.Name = "lblX22";
+            lblX22.Size = new Size(37, 26);
+            lblX22.TabIndex = 69;
+            lblX22.Text = "x₂₂";
             // 
-            // label114
+            // lblX21
             // 
-            label114.AutoSize = true;
-            label114.Font = new Font("Times New Roman", 13.8F);
-            label114.Location = new Point(198, 195);
-            label114.Name = "label114";
-            label114.Size = new Size(37, 26);
-            label114.TabIndex = 68;
-            label114.Text = "x₂₁";
+            lblX21.AutoSize = true;
+            lblX21.Font = new Font("Times New Roman", 13.8F);
+            lblX21.Location = new Point(198, 195);
+            lblX21.Name = "lblX21";
+            lblX21.Size = new Size(37, 26);
+            lblX21.TabIndex = 68;
+            lblX21.Text = "x₂₁";
             // 
-            // label115
+            // lblX12
             // 
-            label115.AutoSize = true;
-            label115.Font = new Font("Times New Roman", 13.8F);
-            label115.Location = new Point(249, 151);
-            label115.Name = "label115";
-            label115.Size = new Size(37, 26);
-            label115.TabIndex = 67;
-            label115.Text = "x₁₂";
+            lblX12.AutoSize = true;
+            lblX12.Font = new Font("Times New Roman", 13.8F);
+            lblX12.Location = new Point(249, 151);
+            lblX12.Name = "lblX12";
+            lblX12.Size = new Size(37, 26);
+            lblX12.TabIndex = 67;
+            lblX12.Text = "x₁₂";
             // 
-            // label116
+            // lblX11
             // 
-            label116.AutoSize = true;
-            label116.Font = new Font("Times New Roman", 13.8F);
-            label116.Location = new Point(200, 151);
-            label116.Name = "label116";
-            label116.Size = new Size(37, 26);
-            label116.TabIndex = 65;
-            label116.Text = "x₁₁";
+            lblX11.AutoSize = true;
+            lblX11.Font = new Font("Times New Roman", 13.8F);
+            lblX11.Location = new Point(200, 151);
+            lblX11.Name = "lblX11";
+            lblX11.Size = new Size(37, 26);
+            lblX11.TabIndex = 65;
+            lblX11.Text = "x₁₁";
             // 
             // label117
             // 
@@ -1973,7 +1966,7 @@
             label118.BackColor = Color.Transparent;
             label118.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label118.ForeColor = Color.Black;
-            label118.Location = new Point(266, 129);
+            label118.Location = new Point(272, 129);
             label118.Name = "label118";
             label118.Size = new Size(68, 95);
             label118.TabIndex = 70;
@@ -1992,45 +1985,45 @@
             label97.Text = "X = A⁻¹B =";
             label97.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label99
+            // lblInvMat22
             // 
-            label99.AutoSize = true;
-            label99.Font = new Font("Times New Roman", 13.8F);
-            label99.Location = new Point(267, 91);
-            label99.Name = "label99";
-            label99.Size = new Size(32, 26);
-            label99.TabIndex = 59;
-            label99.Text = "i₂₂";
+            lblInvMat22.AutoSize = true;
+            lblInvMat22.Font = new Font("Times New Roman", 13.8F);
+            lblInvMat22.Location = new Point(267, 91);
+            lblInvMat22.Name = "lblInvMat22";
+            lblInvMat22.Size = new Size(32, 26);
+            lblInvMat22.TabIndex = 59;
+            lblInvMat22.Text = "i₂₂";
             // 
-            // label104
+            // lblInvMat21
             // 
-            label104.AutoSize = true;
-            label104.Font = new Font("Times New Roman", 13.8F);
-            label104.Location = new Point(198, 91);
-            label104.Name = "label104";
-            label104.Size = new Size(32, 26);
-            label104.TabIndex = 58;
-            label104.Text = "i₂₁";
+            lblInvMat21.AutoSize = true;
+            lblInvMat21.Font = new Font("Times New Roman", 13.8F);
+            lblInvMat21.Location = new Point(198, 91);
+            lblInvMat21.Name = "lblInvMat21";
+            lblInvMat21.Size = new Size(32, 26);
+            lblInvMat21.TabIndex = 58;
+            lblInvMat21.Text = "i₂₁";
             // 
-            // label105
+            // lblInvMat12
             // 
-            label105.AutoSize = true;
-            label105.Font = new Font("Times New Roman", 13.8F);
-            label105.Location = new Point(267, 47);
-            label105.Name = "label105";
-            label105.Size = new Size(32, 26);
-            label105.TabIndex = 57;
-            label105.Text = "i₁₂";
+            lblInvMat12.AutoSize = true;
+            lblInvMat12.Font = new Font("Times New Roman", 13.8F);
+            lblInvMat12.Location = new Point(267, 47);
+            lblInvMat12.Name = "lblInvMat12";
+            lblInvMat12.Size = new Size(32, 26);
+            lblInvMat12.TabIndex = 57;
+            lblInvMat12.Text = "i₁₂";
             // 
-            // label106
+            // lblInvMat11
             // 
-            label106.AutoSize = true;
-            label106.Font = new Font("Times New Roman", 13.8F);
-            label106.Location = new Point(200, 47);
-            label106.Name = "label106";
-            label106.Size = new Size(32, 26);
-            label106.TabIndex = 55;
-            label106.Text = "i₁₁";
+            lblInvMat11.AutoSize = true;
+            lblInvMat11.Font = new Font("Times New Roman", 13.8F);
+            lblInvMat11.Location = new Point(200, 47);
+            lblInvMat11.Name = "lblInvMat11";
+            lblInvMat11.Size = new Size(32, 26);
+            lblInvMat11.TabIndex = 55;
+            lblInvMat11.Text = "i₁₁";
             // 
             // label107
             // 
@@ -2050,7 +2043,7 @@
             label108.BackColor = Color.Transparent;
             label108.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label108.ForeColor = Color.Black;
-            label108.Location = new Point(280, 26);
+            label108.Location = new Point(286, 26);
             label108.Name = "label108";
             label108.Size = new Size(68, 95);
             label108.TabIndex = 60;
@@ -2083,7 +2076,7 @@
             // panel14
             // 
             panel14.BackColor = Color.Azure;
-            panel14.Controls.Add(label130);
+            panel14.Controls.Add(SolSys);
             panel14.Controls.Add(label26);
             panel14.Dock = DockStyle.Fill;
             panel14.Location = new Point(3, 734);
@@ -2091,18 +2084,18 @@
             panel14.Size = new Size(634, 123);
             panel14.TabIndex = 2;
             // 
-            // label130
+            // SolSys
             // 
-            label130.BackColor = Color.LightCyan;
-            label130.Dock = DockStyle.Fill;
-            label130.Font = new Font("Times New Roman", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label130.ForeColor = Color.Black;
-            label130.Location = new Point(0, 28);
-            label130.Name = "label130";
-            label130.Size = new Size(634, 95);
-            label130.TabIndex = 86;
-            label130.Text = "x =     y = ";
-            label130.TextAlign = ContentAlignment.MiddleCenter;
+            SolSys.BackColor = Color.LightCyan;
+            SolSys.Dock = DockStyle.Fill;
+            SolSys.Font = new Font("Times New Roman", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            SolSys.ForeColor = Color.Black;
+            SolSys.Location = new Point(0, 28);
+            SolSys.Name = "SolSys";
+            SolSys.Size = new Size(634, 95);
+            SolSys.TabIndex = 86;
+            SolSys.Text = "x =     y = ";
+            SolSys.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label26
             // 
@@ -2331,20 +2324,20 @@
         private Label label78;
         private Label label76;
         private Label label77;
-        private Label label82;
+        private Label lblDetA1;
         private Label label81;
-        private Label label80;
+        private Label lblDetA;
         private Label label79;
-        private Label label90;
-        private Label label91;
-        private Label label92;
-        private Label label93;
+        private Label lblInv22;
+        private Label lblInv21;
+        private Label lblInv12;
+        private Label lblInv11;
         private Label label94;
         private Label label95;
-        private Label label84;
-        private Label label85;
-        private Label label86;
-        private Label label87;
+        private Label lblInvC22;
+        private Label lblInvC12;
+        private Label lblInvC21;
+        private Label lblInvC11;
         private Label label88;
         private Label label89;
         private Label label83;
@@ -2352,38 +2345,38 @@
         private Label label101;
         private Label label120;
         private Label label119;
-        private Label label113;
-        private Label label114;
-        private Label label115;
-        private Label label116;
+        private Label lblX22;
+        private Label lblX21;
+        private Label lblX12;
+        private Label lblX11;
         private Label label117;
         private Label label118;
         private Label label97;
-        private Label label99;
-        private Label label104;
-        private Label label105;
-        private Label label106;
+        private Label lblInvMat22;
+        private Label lblInvMat21;
+        private Label lblInvMat12;
+        private Label lblInvMat11;
         private Label label107;
         private Label label108;
         private Label lblB21;
         private Label lblB11;
         private Label label125;
         private Label label126;
-        private Label label98;
-        private Label label100;
+        private Label lblCon21;
+        private Label lblCon11;
         private Label label102;
         private Label label103;
-        private Label label109;
-        private Label label110;
+        private Label lblX2;
+        private Label lblX1;
         private Label label111;
         private Label label112;
         private Panel panel7;
         private Label label121;
-        private Label label123;
-        private Label label127;
+        private Label SolY;
+        private Label SolX;
         private Label label128;
         private Label label129;
-        private Label label130;
+        private Label SolSys;
         private Label lblA22;
         private Label lblA21;
         private Label lblA12;
