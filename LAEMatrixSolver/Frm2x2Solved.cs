@@ -24,6 +24,7 @@ namespace LAEMatrixSolver.Properties
         public Frm2x2Solved()
         {
             InitializeComponent();
+
             using (SqliteConnection connection = new SqliteConnection(@"Data Source=C:\ProgramData\LAEMatrixSolver\LAEMatrixSolver.db"))
             {
                 connection.Open();
@@ -43,6 +44,7 @@ namespace LAEMatrixSolver.Properties
                 }
 
                 reader.Close();
+
                 try
                 {
                     DisplayCoefficientMatrix();
@@ -84,6 +86,78 @@ namespace LAEMatrixSolver.Properties
                 SqliteCommand command = new SqliteCommand(query, connection);
                 command.ExecuteNonQuery();
             }
+            // CLEAR COEFFICIENT MATRIX
+            lblA11.Text = "";
+            lblA12.Text = "";
+            lblA21.Text = "";
+            lblA22.Text = "";
+
+            // CLEAR CONSTANTS AND DETERMINANT
+            lblB11.Text = "";
+            lblB21.Text = "";
+            lblDet.Text = "";
+
+            // CLEAR MINOR VALUES
+            lblC11.Text = "";
+            lblC12.Text = "";
+            lblC21.Text = "";
+            lblC22.Text = "";
+
+            // CLEAR COFACTOR VALUES
+            lblCof11.Text = "";
+            lblCof12.Text = "";
+            lblCof21.Text = "";
+            lblCof22.Text = "";
+
+            // CLEAR COFACTOR MATRIX
+            lblCofMat11.Text = "";
+            lblCofMat12.Text = "";
+            lblCofMat21.Text = "";
+            lblCofMat22.Text = "";
+
+            // CLEAR ADJOINT MATRIX
+            lblAdj11.Text = "";
+            lblAdj12.Text = "";
+            lblAdj21.Text = "";
+            lblAdj22.Text = "";
+
+            // CLEAR INVERSE MATRIX
+            lblDetA.Text = "";
+            lblDetA1.Text = "";
+
+            lblInvC11.Text = "";
+            lblInvC12.Text = "";
+            lblInvC21.Text = "";
+            lblInvC22.Text = "";
+
+            lblInv11.Text = "";
+            lblInv12.Text = "";
+            lblInv21.Text = "";
+            lblInv22.Text = "";
+
+            // CLEAR MATRIX MULTIPLICATION
+            lblInvMat11.Text = "";
+            lblInvMat12.Text = "";
+            lblInvMat21.Text = "";
+            lblInvMat22.Text = "";
+
+            lblCon11.Text = "";
+            lblCon21.Text = "";
+
+            // CLEAR ROW CALCULATIONS
+            lblX11.Text = "";
+            lblX12.Text = "";
+            lblX21.Text = "";
+            lblX22.Text = "";
+
+            // CLEAR SOLUTION MATRIX
+            lblX1.Text = "";
+            lblX2.Text = "";
+
+            // CLEAR FINAL ANSWERS
+            SolX.Text = "";
+            SolY.Text = "";
+            SolSys.Text = "";
         }
 
         private void rb3x3_CheckedChanged(object sender, EventArgs e)

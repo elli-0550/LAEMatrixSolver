@@ -243,7 +243,7 @@
             txtBoxEq3.Name = "txtBoxEq3";
             txtBoxEq3.Size = new Size(134, 26);
             txtBoxEq3.TabIndex = 10;
-            txtBoxEq3.TextChanged += txtBoxEq3_TextChanged;
+            txtBoxEq3.TextChanged += txtBoxEq3_Leave;
             txtBoxEq3.Leave += txtBoxEq3_Leave;
             // 
             // btnClr

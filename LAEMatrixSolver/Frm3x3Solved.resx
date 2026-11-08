@@ -121,6 +121,14 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>35</value>
   </metadata>
+  <data name="lblDet.Text" xml:space="preserve">
+    <value>det(A) = (A₁₁)(A₂₂)(A₃₃) + (A₁₂)(A₂₃)(A₃₁) + (A₁₃)(A₂₁)(A₃₂)
+          − ((A₁₃)(A₂₂)(A₃₁) + (A₁₁)(A₂₃)(A₃₂) + (A₁₂)(A₂₁)(A₃₃))
+         
+            = __________________
+         
+            = __________________</value>
+  </data>
 </root>

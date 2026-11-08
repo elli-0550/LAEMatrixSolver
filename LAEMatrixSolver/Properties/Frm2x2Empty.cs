@@ -17,28 +17,36 @@ namespace LAEMatrixSolver.Properties
         {
             InitializeComponent();
 
+            string equation1 = "";
+            string equation2 = "";
+
             using (SqliteConnection connection = new SqliteConnection(@"Data Source=C:\ProgramData\LAEMatrixSolver\LAEMatrixSolver.db"))
             {
                 connection.Open();
 
                 string query = "UPDATE CurrentEquation SET MatrixSize = 2";
 
-                SqliteCommand command = new SqliteCommand(query, connection);
-                command.ExecuteNonQuery();
+                using (SqliteCommand command = new SqliteCommand(query, connection))
+                {
+                    command.ExecuteNonQuery();
+                }
 
                 query = "SELECT Equation1, Equation2 FROM CurrentEquation";
 
-                command = new SqliteCommand(query, connection);
-                SqliteDataReader reader = command.ExecuteReader();
-
-                if (reader.Read())
+                using (SqliteCommand command = new SqliteCommand(query, connection))
+                using (SqliteDataReader reader = command.ExecuteReader())
                 {
-                    txtBoxEq1.Text = reader["Equation1"].ToString();
-                    txtBoxEq2.Text = reader["Equation2"].ToString();
+                    if (reader.Read())
+                    {
+                        equation1 = reader["Equation1"].ToString();
+                        equation2 = reader["Equation2"].ToString();
+                    }
                 }
-
-                reader.Close();
             }
+
+            // Load after closing the database connection
+            txtBoxEq1.Text = equation1;
+            txtBoxEq2.Text = equation2;
         }
 
         private void btnSolve_Click(object sender, EventArgs e)
