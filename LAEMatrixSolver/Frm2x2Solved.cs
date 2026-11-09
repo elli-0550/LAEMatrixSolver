@@ -67,11 +67,6 @@ namespace LAEMatrixSolver.Properties
             }
         }
 
-        private void btnSolve_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnClr_Click(object sender, EventArgs e)
         {
             txtBoxEq1.Text = "";
@@ -166,9 +161,9 @@ namespace LAEMatrixSolver.Properties
             {
                 Frm3x3Empty form4 = new Frm3x3Empty();
 
-                form4.FormClosed += (s, args) => this.Close();
-                form4.Show();
                 this.Hide();
+                form4.ShowDialog();
+                this.Close();
 
                 rb2x2.Checked = true;
             }
@@ -385,19 +380,47 @@ namespace LAEMatrixSolver.Properties
                 lblX2.Text = $"{Math.Round(resultY * den, 8)}/{den}";
 
             // SIMPLIFY FINAL X
-            if (resultX % 1 == 0)
-                SolX.Text = resultX.ToString();
+            int numX = (int)Math.Round(resultX * den);
+            int denX = (int)Math.Round(den);
+
+            for (int i = Math.Min(Math.Abs(numX), denX); i >= 1; i--)
+            {
+                if (numX % i == 0 && denX % i == 0)
+                {
+                    numX = numX / i;
+                    denX = denX / i;
+                    break;
+                }
+            }
+
+            if (denX == 1)
+                SolX.Text = numX.ToString();
             else
-                SolX.Text = resultX.ToString("0.####");
+                SolX.Text = $"{numX}/{denX}";
+
 
             // SIMPLIFY FINAL Y
-            if (resultY % 1 == 0)
-                SolY.Text = resultY.ToString();
+            int numY = (int)Math.Round(resultY * den);
+            int denY = (int)Math.Round(den);
+
+            for (int i = Math.Min(Math.Abs(numY), denY); i >= 1; i--)
+            {
+                if (numY % i == 0 && denY % i == 0)
+                {
+                    numY = numY / i;
+                    denY = denY / i;
+                    break;
+                }
+            }
+
+            if (denY == 1)
+                SolY.Text = numY.ToString();
             else
-                SolY.Text = resultY.ToString("0.####");
+                SolY.Text = $"{numY}/{denY}";
         }
 
         private void DisplaySolution()
+        
         {
             SolSys.Text = $"x = {SolX.Text}     y = {SolY.Text}";
         }
@@ -439,15 +462,6 @@ namespace LAEMatrixSolver.Properties
                 }
             }
         }
-
-        private void label96_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel13_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
     }
 }

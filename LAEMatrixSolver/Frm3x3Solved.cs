@@ -729,5 +729,10 @@ namespace LAEMatrixSolver
         {
 
         }
+
+        private void pnlCof_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

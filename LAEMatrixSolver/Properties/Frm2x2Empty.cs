@@ -63,7 +63,7 @@ namespace LAEMatrixSolver.Properties
 
             this.Hide();
             form3.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void btnClr_Click(object sender, EventArgs e)
