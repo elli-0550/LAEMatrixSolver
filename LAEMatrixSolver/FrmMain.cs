@@ -16,11 +16,6 @@ namespace LAEMatrixSolver
             InitializeComponent();
         }
 
-        private void FrmMain_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Frm2x2Empty dashForm = new Frm2x2Empty();

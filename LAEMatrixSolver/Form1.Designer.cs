@@ -43,20 +43,20 @@
             label2.Location = new Point(660, 444);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(0, 51);
+            label2.Size = new Size(0, 41);
             label2.TabIndex = 0;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sans Serif Collection", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.BorderStyle = BorderStyle.Fixed3D;
+            label1.Font = new Font("Nirmala UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(223, 241, 255);
-            label1.Location = new Point(26, 4);
+            label1.Location = new Point(85, 46);
             label1.Name = "label1";
-            label1.Size = new Size(575, 204);
+            label1.Size = new Size(437, 79);
             label1.TabIndex = 1;
             label1.Text = "LAE Matrix Solver";
-            label1.Click += label1_Click;
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // progressBar1
             // 
@@ -73,14 +73,13 @@
             // 
             lblPercent.AutoSize = true;
             lblPercent.BackColor = Color.Transparent;
-            lblPercent.Font = new Font("Sans Serif Collection", 11.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPercent.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblPercent.ForeColor = Color.FromArgb(223, 241, 255);
-            lblPercent.Location = new Point(232, 108);
+            lblPercent.Location = new Point(270, 135);
             lblPercent.Name = "lblPercent";
-            lblPercent.Size = new Size(134, 68);
+            lblPercent.Size = new Size(88, 21);
             lblPercent.TabIndex = 3;
             lblPercent.Text = "Loading....";
-            lblPercent.Click += lblPercent_Click;
             // 
             // timer1
             // 
@@ -89,7 +88,7 @@
             // 
             // frmHome
             // 
-            AutoScaleDimensions = new SizeF(10F, 51F);
+            AutoScaleDimensions = new SizeF(8F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 46, 80);
             ClientSize = new Size(610, 217);
@@ -106,7 +105,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LAE SOLVER";
             TransparencyKey = Color.MintCream;
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

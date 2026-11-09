@@ -30,8 +30,8 @@ namespace LAEMatrixSolver
         {
             InitializeComponent();
             //2x + 3y - z = 5
-            //2x + 4y + 5z = 4
             //7x + y + 2z = 3  
+            //2x + 4y + 5z = 4
             equation1 = "";
             equation2 = "";
             equation3 = "";
@@ -143,7 +143,7 @@ namespace LAEMatrixSolver
             label151.Text = C13.ToString();
             label149.Text = C23.ToString();
             label88.Text = C33.ToString();
-    
+
             // DISPLAY SIMPLIFIED FRACTIONS
             label162.Text = SimplifyFraction(C11, determinant);
             label163.Text = SimplifyFraction(C21, determinant);
@@ -723,6 +723,11 @@ namespace LAEMatrixSolver
             DisplayAdjointMatrix();
             DisplayInverseMatrix();
             DisplaySolutionSystem();
+        }
+
+        private void Frm3x3Solved_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

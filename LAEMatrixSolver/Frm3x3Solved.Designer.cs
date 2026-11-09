@@ -341,7 +341,7 @@
             panel4.Location = new Point(0, 0);
             panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(826, 46);
+            panel4.Size = new Size(764, 46);
             panel4.TabIndex = 1;
             // 
             // label8
@@ -382,10 +382,10 @@
             panel3.Controls.Add(tblSol);
             panel3.Controls.Add(panel5);
             panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(835, 60);
+            panel3.Location = new Point(773, 55);
             panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(559, 772);
+            panel3.Size = new Size(517, 702);
             panel3.TabIndex = 3;
             // 
             // tblSol
@@ -403,7 +403,7 @@
             tblSol.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tblSol.RowStyles.Add(new RowStyle(SizeType.Percent, 65F));
             tblSol.RowStyles.Add(new RowStyle(SizeType.Percent, 15F));
-            tblSol.Size = new Size(559, 726);
+            tblSol.Size = new Size(517, 656);
             tblSol.TabIndex = 1;
             // 
             // panel12
@@ -421,7 +421,7 @@
             panel12.Location = new Point(3, 2);
             panel12.Margin = new Padding(3, 2, 3, 2);
             panel12.Name = "panel12";
-            panel12.Size = new Size(553, 141);
+            panel12.Size = new Size(511, 127);
             panel12.TabIndex = 0;
             // 
             // label169
@@ -590,10 +590,10 @@
             panel13.Controls.Add(label176);
             panel13.Dock = DockStyle.Fill;
             panel13.Font = new Font("Times New Roman", 13.8F);
-            panel13.Location = new Point(3, 147);
+            panel13.Location = new Point(3, 133);
             panel13.Margin = new Padding(3, 2, 3, 2);
             panel13.Name = "panel13";
-            panel13.Size = new Size(553, 467);
+            panel13.Size = new Size(511, 422);
             panel13.TabIndex = 1;
             // 
             // label29
@@ -1364,10 +1364,10 @@
             panel14.Controls.Add(SolSys);
             panel14.Controls.Add(label26);
             panel14.Dock = DockStyle.Fill;
-            panel14.Location = new Point(3, 618);
+            panel14.Location = new Point(3, 559);
             panel14.Margin = new Padding(3, 2, 3, 2);
             panel14.Name = "panel14";
-            panel14.Size = new Size(553, 106);
+            panel14.Size = new Size(511, 95);
             panel14.TabIndex = 2;
             // 
             // label168
@@ -1411,7 +1411,7 @@
             SolSys.ForeColor = Color.Black;
             SolSys.Location = new Point(0, 21);
             SolSys.Name = "SolSys";
-            SolSys.Size = new Size(553, 85);
+            SolSys.Size = new Size(511, 74);
             SolSys.TabIndex = 86;
             SolSys.Text = "x =           y =           z = ";
             SolSys.TextAlign = ContentAlignment.MiddleCenter;
@@ -1438,7 +1438,7 @@
             panel5.Location = new Point(0, 0);
             panel5.Margin = new Padding(3, 2, 3, 2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(559, 46);
+            panel5.Size = new Size(517, 46);
             panel5.TabIndex = 0;
             // 
             // label9
@@ -1761,10 +1761,10 @@
             pnlInvRes.Controls.Add(label152);
             pnlInvRes.Dock = DockStyle.Fill;
             pnlInvRes.Font = new Font("Times New Roman", 10.8F);
-            pnlInvRes.Location = new Point(416, 437);
+            pnlInvRes.Location = new Point(385, 395);
             pnlInvRes.Margin = new Padding(3, 2, 3, 2);
             pnlInvRes.Name = "pnlInvRes";
-            pnlInvRes.Size = new Size(407, 287);
+            pnlInvRes.Size = new Size(376, 259);
             pnlInvRes.TabIndex = 4;
             // 
             // label88
@@ -1942,10 +1942,10 @@
             panel2.Controls.Add(tblInv);
             panel2.Controls.Add(panel4);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(3, 60);
+            panel2.Location = new Point(3, 55);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(826, 772);
+            panel2.Size = new Size(764, 702);
             panel2.TabIndex = 2;
             // 
             // tblInv
@@ -1967,7 +1967,7 @@
             tblInv.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tblInv.RowStyles.Add(new RowStyle(SizeType.Percent, 35F));
             tblInv.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
-            tblInv.Size = new Size(826, 726);
+            tblInv.Size = new Size(764, 656);
             tblInv.TabIndex = 0;
             // 
             // pnlCoe
@@ -1991,7 +1991,7 @@
             pnlCoe.Location = new Point(3, 2);
             pnlCoe.Margin = new Padding(3, 2, 3, 2);
             pnlCoe.Name = "pnlCoe";
-            pnlCoe.Size = new Size(407, 177);
+            pnlCoe.Size = new Size(376, 160);
             pnlCoe.TabIndex = 0;
             // 
             // lblA33
@@ -2159,10 +2159,10 @@
             pnlDet.Controls.Add(label14);
             pnlDet.Controls.Add(pictureBox5);
             pnlDet.Dock = DockStyle.Fill;
-            pnlDet.Location = new Point(416, 2);
+            pnlDet.Location = new Point(385, 2);
             pnlDet.Margin = new Padding(3, 2, 3, 2);
             pnlDet.Name = "pnlDet";
-            pnlDet.Size = new Size(407, 177);
+            pnlDet.Size = new Size(376, 160);
             pnlDet.TabIndex = 1;
             // 
             // lblDet
@@ -2171,7 +2171,7 @@
             lblDet.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblDet.Location = new Point(0, 21);
             lblDet.Name = "lblDet";
-            lblDet.Size = new Size(407, 156);
+            lblDet.Size = new Size(376, 139);
             lblDet.TabIndex = 4;
             lblDet.Text = resources.GetString("lblDet.Text");
             lblDet.TextAlign = ContentAlignment.MiddleCenter;
@@ -2206,7 +2206,7 @@
             pictureBox5.Location = new Point(0, 0);
             pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(407, 177);
+            pictureBox5.Size = new Size(376, 160);
             pictureBox5.TabIndex = 4;
             pictureBox5.TabStop = false;
             // 
@@ -2294,11 +2294,11 @@
             pnlCof.Controls.Add(label16);
             pnlCof.Controls.Add(label27);
             pnlCof.Dock = DockStyle.Fill;
-            pnlCof.Location = new Point(3, 183);
+            pnlCof.Location = new Point(3, 166);
             pnlCof.Margin = new Padding(3, 2, 3, 2);
             pnlCof.Name = "pnlCof";
             tblInv.SetRowSpan(pnlCof, 2);
-            pnlCof.Size = new Size(407, 541);
+            pnlCof.Size = new Size(376, 488);
             pnlCof.TabIndex = 2;
             // 
             // label106
@@ -3101,10 +3101,10 @@
             pnlAdj.Controls.Add(label144);
             pnlAdj.Dock = DockStyle.Fill;
             pnlAdj.Font = new Font("Times New Roman", 13.8F);
-            pnlAdj.Location = new Point(416, 183);
+            pnlAdj.Location = new Point(385, 166);
             pnlAdj.Margin = new Padding(3, 2, 3, 2);
             pnlAdj.Name = "pnlAdj";
-            pnlAdj.Size = new Size(407, 250);
+            pnlAdj.Size = new Size(376, 225);
             pnlAdj.TabIndex = 3;
             // 
             // label74
@@ -3261,7 +3261,7 @@
             flowHistory.Location = new Point(0, 47);
             flowHistory.Margin = new Padding(3, 2, 3, 2);
             flowHistory.Name = "flowHistory";
-            flowHistory.Size = new Size(261, 783);
+            flowHistory.Size = new Size(241, 708);
             flowHistory.TabIndex = 1;
             // 
             // panel6
@@ -3273,7 +3273,7 @@
             panel6.Location = new Point(0, 0);
             panel6.Margin = new Padding(3, 2, 3, 2);
             panel6.Name = "panel6";
-            panel6.Size = new Size(261, 47);
+            panel6.Size = new Size(241, 47);
             panel6.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -3294,7 +3294,7 @@
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 93F));
-            tableLayoutPanel1.Size = new Size(1664, 834);
+            tableLayoutPanel1.Size = new Size(1540, 759);
             tableLayoutPanel1.TabIndex = 16;
             // 
             // pnlIn
@@ -3320,7 +3320,7 @@
             pnlIn.Location = new Point(3, 2);
             pnlIn.Margin = new Padding(3, 2, 3, 2);
             pnlIn.Name = "pnlIn";
-            pnlIn.Size = new Size(1391, 54);
+            pnlIn.Size = new Size(1287, 49);
             pnlIn.TabIndex = 0;
             // 
             // txtBoxEq3
@@ -3350,7 +3350,7 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = SystemColors.ActiveCaption;
-            button3.Location = new Point(1235, 7);
+            button3.Location = new Point(1182, 7);
             button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
             button3.Size = new Size(143, 35);
@@ -3365,7 +3365,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(1112, 7);
+            button2.Location = new Point(1059, 7);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
             button2.Size = new Size(116, 35);
@@ -3380,7 +3380,7 @@
             button1.BackColor = Color.Azure;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(994, 7);
+            button1.Location = new Point(941, 7);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(111, 35);
@@ -3405,7 +3405,7 @@
             btnClr.BackColor = Color.Azure;
             btnClr.FlatStyle = FlatStyle.Flat;
             btnClr.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnClr.Location = new Point(1602, 7);
+            btnClr.Location = new Point(1549, 7);
             btnClr.Margin = new Padding(3, 2, 3, 2);
             btnClr.Name = "btnClr";
             btnClr.Size = new Size(111, 35);
@@ -3420,7 +3420,7 @@
             btnSolve.FlatStyle = FlatStyle.Flat;
             btnSolve.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSolve.ForeColor = Color.White;
-            btnSolve.Location = new Point(1718, 6);
+            btnSolve.Location = new Point(1665, 6);
             btnSolve.Margin = new Padding(3, 2, 3, 2);
             btnSolve.Name = "btnSolve";
             btnSolve.Size = new Size(116, 35);
@@ -3435,7 +3435,7 @@
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnBack.ForeColor = SystemColors.ActiveCaption;
-            btnBack.Location = new Point(1840, 6);
+            btnBack.Location = new Point(1787, 6);
             btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(143, 35);
@@ -3480,7 +3480,7 @@
             rb3x3.Location = new Point(205, 14);
             rb3x3.Margin = new Padding(3, 2, 3, 2);
             rb3x3.Name = "rb3x3";
-            rb3x3.Size = new Size(49, 19);
+            rb3x3.Size = new Size(48, 19);
             rb3x3.TabIndex = 2;
             rb3x3.TabStop = true;
             rb3x3.Text = "3 x 3";
@@ -3492,7 +3492,7 @@
             rb2x2.Location = new Point(145, 14);
             rb2x2.Margin = new Padding(3, 2, 3, 2);
             rb2x2.Name = "rb2x2";
-            rb2x2.Size = new Size(49, 19);
+            rb2x2.Size = new Size(48, 19);
             rb2x2.TabIndex = 1;
             rb2x2.Text = "2 x 2";
             rb2x2.UseVisualStyleBackColor = true;
@@ -3514,11 +3514,11 @@
             pnl.Controls.Add(flowHistory);
             pnl.Controls.Add(panel6);
             pnl.Dock = DockStyle.Fill;
-            pnl.Location = new Point(1400, 2);
+            pnl.Location = new Point(1296, 2);
             pnl.Margin = new Padding(3, 2, 3, 2);
             pnl.Name = "pnl";
             tableLayoutPanel1.SetRowSpan(pnl, 2);
-            pnl.Size = new Size(261, 830);
+            pnl.Size = new Size(241, 755);
             pnl.TabIndex = 1;
             // 
             // pictureBox2
@@ -3575,7 +3575,7 @@
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1664, 44);
+            pictureBox1.Size = new Size(1540, 44);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
@@ -3584,7 +3584,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1664, 878);
+            ClientSize = new Size(1540, 803);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
@@ -3595,6 +3595,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LAE Matrix Solver";
             WindowState = FormWindowState.Maximized;
+            Load += Frm3x3Solved_Load;
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

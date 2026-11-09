@@ -32,11 +32,6 @@ namespace LAEMatrixSolver
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             progressBar1.Increment(2);
@@ -55,17 +50,6 @@ namespace LAEMatrixSolver
                 mainForm.Show();
                 this.Hide();
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-        
-
-        private void lblPercent_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

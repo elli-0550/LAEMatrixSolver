@@ -372,17 +372,17 @@ namespace LAEMatrixSolver.Properties
 
             den = Math.Abs(determinant);
 
-           // DISPLAY UNSIMPLIFIED X
-if (den == 1)
-    lblX1.Text = resultX.ToString();
-else
-    lblX1.Text = $"{Math.Round(resultX * den, 8)}/{den}";
+            // DISPLAY UNSIMPLIFIED X
+            if (den == 1)
+                lblX1.Text = resultX.ToString();
+            else
+                lblX1.Text = $"{Math.Round(resultX * den, 8)}/{den}";
 
-// DISPLAY UNSIMPLIFIED Y
-if (den == 1)
-    lblX2.Text = resultY.ToString();
-else
-    lblX2.Text = $"{Math.Round(resultY * den, 8)}/{den}";
+            // DISPLAY UNSIMPLIFIED Y
+            if (den == 1)
+                lblX2.Text = resultY.ToString();
+            else
+                lblX2.Text = $"{Math.Round(resultY * den, 8)}/{den}";
 
             // SIMPLIFY FINAL X
             if (resultX % 1 == 0)
@@ -438,6 +438,16 @@ else
                     transaction.Commit();
                 }
             }
+        }
+
+        private void label96_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel13_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
