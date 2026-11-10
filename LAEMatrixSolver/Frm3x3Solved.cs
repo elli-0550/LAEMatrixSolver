@@ -551,7 +551,8 @@ namespace LAEMatrixSolver
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnClr_Click_1(object sender, EventArgs e)
+
         {//clear
             txtBoxEq1.Text = "";
             txtBoxEq2.Text = "";
@@ -723,16 +724,6 @@ namespace LAEMatrixSolver
             DisplayAdjointMatrix();
             DisplayInverseMatrix();
             DisplaySolutionSystem();
-        }
-
-        private void Frm3x3Solved_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlCof_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

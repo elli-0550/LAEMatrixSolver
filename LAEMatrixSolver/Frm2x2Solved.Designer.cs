@@ -1661,7 +1661,7 @@
             label108.BackColor = Color.Transparent;
             label108.Font = new Font("Times New Roman", 60F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label108.ForeColor = Color.Black;
-            label108.Location = new Point(369, 30);
+            label108.Location = new Point(379, 31);
             label108.Name = "label108";
             label108.Size = new Size(55, 105);
             label108.TabIndex = 60;
@@ -1892,7 +1892,7 @@
             label118.BackColor = Color.Transparent;
             label118.Font = new Font("Times New Roman", 60F);
             label118.ForeColor = Color.Black;
-            label118.Location = new Point(369, 141);
+            label118.Location = new Point(379, 141);
             label118.Name = "label118";
             label118.Size = new Size(55, 101);
             label118.TabIndex = 70;
@@ -1959,7 +1959,7 @@
             // 
             label107.Font = new Font("Times New Roman", 60F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label107.ForeColor = Color.Black;
-            label107.Location = new Point(220, 20);
+            label107.Location = new Point(214, 20);
             label107.Name = "label107";
             label107.Size = new Size(55, 125);
             label107.TabIndex = 56;

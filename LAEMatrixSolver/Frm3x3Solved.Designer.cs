@@ -36,20 +36,18 @@
             panel3 = new Panel();
             tblSol = new TableLayoutPanel();
             panel12 = new Panel();
+            label126 = new Label();
+            label101 = new Label();
             label169 = new Label();
             lblB21 = new Label();
             lblB11 = new Label();
             label125 = new Label();
-            label126 = new Label();
-            label101 = new Label();
             label21 = new Label();
             label22 = new Label();
             panel13 = new Panel();
-            label29 = new Label();
             label128 = new Label();
             label129 = new Label();
             label216 = new Label();
-            label217 = new Label();
             label218 = new Label();
             label215 = new Label();
             label214 = new Label();
@@ -113,6 +111,7 @@
             label23 = new Label();
             label24 = new Label();
             label176 = new Label();
+            label217 = new Label();
             panel14 = new Panel();
             label168 = new Label();
             label167 = new Label();
@@ -134,16 +133,16 @@
             label19 = new Label();
             label20 = new Label();
             panel7 = new Panel();
+            label160 = new Label();
+            label164 = new Label();
+            label162 = new Label();
+            label165 = new Label();
             label94 = new Label();
             label95 = new Label();
             label157 = new Label();
-            label164 = new Label();
             label158 = new Label();
             label163 = new Label();
-            label162 = new Label();
-            label160 = new Label();
             label161 = new Label();
-            label165 = new Label();
             label159 = new Label();
             pnlInvRes = new Panel();
             label88 = new Label();
@@ -270,15 +269,16 @@
             label139 = new Label();
             label18 = new Label();
             label140 = new Label();
-            label147 = new Label();
             label141 = new Label();
-            label146 = new Label();
             label142 = new Label();
             label145 = new Label();
             label143 = new Label();
             label144 = new Label();
+            label146 = new Label();
+            label147 = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
             pnlIn = new Panel();
+            btnClr = new Button();
             txtBoxEq3 = new TextBox();
             label28 = new Label();
             button2 = new Button();
@@ -400,12 +400,12 @@
             // panel12
             // 
             panel12.BackColor = Color.Azure;
+            panel12.Controls.Add(label126);
+            panel12.Controls.Add(label101);
             panel12.Controls.Add(label169);
             panel12.Controls.Add(lblB21);
             panel12.Controls.Add(lblB11);
             panel12.Controls.Add(label125);
-            panel12.Controls.Add(label126);
-            panel12.Controls.Add(label101);
             panel12.Controls.Add(label21);
             panel12.Controls.Add(label22);
             panel12.Dock = DockStyle.Fill;
@@ -415,60 +415,15 @@
             panel12.Size = new Size(759, 171);
             panel12.TabIndex = 0;
             // 
-            // label169
-            // 
-            label169.AutoSize = true;
-            label169.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label169.Location = new Point(254, 94);
-            label169.Name = "label169";
-            label169.Size = new Size(27, 19);
-            label169.TabIndex = 77;
-            label169.Text = "b₃₁";
-            label169.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblB21
-            // 
-            lblB21.AutoSize = true;
-            lblB21.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblB21.Location = new Point(255, 70);
-            lblB21.Name = "lblB21";
-            lblB21.Size = new Size(27, 19);
-            lblB21.TabIndex = 74;
-            lblB21.Text = "b₂₁";
-            lblB21.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblB11
-            // 
-            lblB11.AutoSize = true;
-            lblB11.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblB11.Location = new Point(255, 46);
-            lblB11.Name = "lblB11";
-            lblB11.Size = new Size(27, 19);
-            lblB11.TabIndex = 71;
-            lblB11.Text = "b₁₁";
-            lblB11.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label125
-            // 
-            label125.AutoSize = true;
-            label125.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label125.ForeColor = Color.Black;
-            label125.Location = new Point(210, 36);
-            label125.Name = "label125";
-            label125.Size = new Size(55, 76);
-            label125.TabIndex = 72;
-            label125.Text = "[";
-            label125.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // label126
             // 
             label126.AutoSize = true;
             label126.BackColor = Color.Transparent;
-            label126.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label126.Font = new Font("Times New Roman", 69.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label126.ForeColor = Color.Black;
-            label126.Location = new Point(273, 36);
+            label126.Location = new Point(422, 45);
             label126.Name = "label126";
-            label126.Size = new Size(55, 76);
+            label126.Size = new Size(77, 105);
             label126.TabIndex = 76;
             label126.Text = "]";
             label126.TextAlign = ContentAlignment.MiddleCenter;
@@ -478,44 +433,87 @@
             label101.AutoSize = true;
             label101.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label101.ForeColor = Color.Black;
-            label101.Location = new Point(168, 64);
+            label101.Location = new Point(272, 93);
             label101.Name = "label101";
             label101.Size = new Size(52, 25);
             label101.TabIndex = 12;
             label101.Text = "B = ";
             label101.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // label169
+            // 
+            label169.AutoSize = true;
+            label169.Font = new Font("Times New Roman", 15.75F);
+            label169.Location = new Point(382, 123);
+            label169.Name = "label169";
+            label169.Size = new Size(32, 23);
+            label169.TabIndex = 77;
+            label169.Text = "b₃₁";
+            label169.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblB21
+            // 
+            lblB21.AutoSize = true;
+            lblB21.Font = new Font("Times New Roman", 15.75F);
+            lblB21.Location = new Point(382, 92);
+            lblB21.Name = "lblB21";
+            lblB21.Size = new Size(32, 23);
+            lblB21.TabIndex = 74;
+            lblB21.Text = "b₂₁";
+            lblB21.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblB11
+            // 
+            lblB11.AutoSize = true;
+            lblB11.Font = new Font("Times New Roman", 15.75F);
+            lblB11.Location = new Point(382, 61);
+            lblB11.Name = "lblB11";
+            lblB11.Size = new Size(32, 23);
+            lblB11.TabIndex = 71;
+            lblB11.Text = "b₁₁";
+            lblB11.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label125
+            // 
+            label125.AutoSize = true;
+            label125.Font = new Font("Times New Roman", 69.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label125.ForeColor = Color.Black;
+            label125.Location = new Point(301, 45);
+            label125.Name = "label125";
+            label125.Size = new Size(77, 105);
+            label125.TabIndex = 72;
+            label125.Text = "[";
+            label125.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // label21
             // 
             label21.AutoSize = true;
-            label21.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label21.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label21.ForeColor = Color.FromArgb(40, 65, 95);
-            label21.Location = new Point(169, 4);
+            label21.Location = new Point(203, 10);
             label21.Name = "label21";
-            label21.Size = new Size(20, 19);
+            label21.Size = new Size(24, 24);
             label21.TabIndex = 3;
             label21.Text = "B";
             // 
             // label22
             // 
-            label22.AutoSize = true;
             label22.Dock = DockStyle.Top;
-            label22.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label22.Font = new Font("Nirmala UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label22.ForeColor = Color.FromArgb(40, 65, 95);
             label22.Location = new Point(0, 0);
             label22.Name = "label22";
-            label22.Size = new Size(156, 21);
+            label22.Size = new Size(759, 41);
             label22.TabIndex = 2;
             label22.Text = "6. Constants Matrix";
+            label22.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // panel13
             // 
             panel13.BackColor = Color.Azure;
-            panel13.Controls.Add(label29);
             panel13.Controls.Add(label128);
             panel13.Controls.Add(label129);
             panel13.Controls.Add(label216);
-            panel13.Controls.Add(label217);
             panel13.Controls.Add(label218);
             panel13.Controls.Add(label215);
             panel13.Controls.Add(label214);
@@ -579,6 +577,7 @@
             panel13.Controls.Add(label23);
             panel13.Controls.Add(label24);
             panel13.Controls.Add(label176);
+            panel13.Controls.Add(label217);
             panel13.Dock = DockStyle.Fill;
             panel13.Font = new Font("Times New Roman", 18F);
             panel13.Location = new Point(3, 177);
@@ -587,90 +586,63 @@
             panel13.Size = new Size(759, 566);
             panel13.TabIndex = 1;
             // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label29.ForeColor = Color.Black;
-            label29.Location = new Point(108, 357);
-            label29.Name = "label29";
-            label29.Size = new Size(22, 19);
-            label29.TabIndex = 210;
-            label29.Text = " =";
-            label29.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // label128
             // 
-            label128.AutoSize = true;
-            label128.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label128.Location = new Point(160, 378);
+            label128.Font = new Font("Times New Roman", 14.25F);
+            label128.Location = new Point(170, 476);
             label128.Name = "label128";
-            label128.Size = new Size(31, 21);
+            label128.Size = new Size(70, 21);
             label128.TabIndex = 209;
             label128.Text = "x₁₃";
-            label128.TextAlign = ContentAlignment.MiddleLeft;
+            label128.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label129
             // 
-            label129.AutoSize = true;
-            label129.Font = new Font("Times New Roman", 13.8F);
-            label129.Location = new Point(160, 355);
+            label129.Font = new Font("Times New Roman", 14.25F);
+            label129.Location = new Point(170, 446);
             label129.Name = "label129";
-            label129.Size = new Size(31, 21);
+            label129.Size = new Size(70, 21);
             label129.TabIndex = 207;
             label129.Text = "x₂₁";
+            label129.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label216
             // 
-            label216.AutoSize = true;
-            label216.Font = new Font("Times New Roman", 13.8F);
-            label216.Location = new Point(161, 331);
+            label216.Font = new Font("Times New Roman", 14.25F);
+            label216.Location = new Point(170, 418);
             label216.Name = "label216";
-            label216.Size = new Size(31, 21);
+            label216.Size = new Size(70, 21);
             label216.TabIndex = 205;
             label216.Text = "x₁₁";
-            // 
-            // label217
-            // 
-            label217.AutoSize = true;
-            label217.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label217.ForeColor = Color.Black;
-            label217.Location = new Point(122, 323);
-            label217.Name = "label217";
-            label217.Size = new Size(55, 76);
-            label217.TabIndex = 206;
-            label217.Text = "[";
-            label217.TextAlign = ContentAlignment.MiddleCenter;
+            label216.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label218
             // 
             label218.AutoSize = true;
             label218.BackColor = Color.Transparent;
-            label218.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label218.Font = new Font("Times New Roman", 75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label218.ForeColor = Color.Black;
-            label218.Location = new Point(218, 323);
+            label218.Location = new Point(229, 392);
             label218.Name = "label218";
-            label218.Size = new Size(55, 76);
+            label218.Size = new Size(82, 114);
             label218.TabIndex = 208;
             label218.Text = "]";
             label218.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label215
             // 
-            label215.AutoSize = true;
-            label215.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label215.Location = new Point(162, 285);
+            label215.Font = new Font("Times New Roman", 14.25F);
+            label215.Location = new Point(170, 361);
             label215.Name = "label215";
-            label215.Size = new Size(31, 21);
+            label215.Size = new Size(70, 21);
             label215.TabIndex = 204;
             label215.Text = "x₁₃";
-            label215.TextAlign = ContentAlignment.MiddleLeft;
+            label215.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label214
             // 
-            label214.AutoSize = true;
-            label214.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label214.Location = new Point(218, 148);
+            label214.Font = new Font("Times New Roman", 14.25F);
+            label214.Location = new Point(249, 190);
             label214.Name = "label214";
             label214.Size = new Size(16, 21);
             label214.TabIndex = 203;
@@ -679,9 +651,8 @@
             // 
             // label213
             // 
-            label213.AutoSize = true;
-            label213.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label213.Location = new Point(219, 173);
+            label213.Font = new Font("Times New Roman", 14.25F);
+            label213.Location = new Point(250, 216);
             label213.Name = "label213";
             label213.Size = new Size(16, 21);
             label213.TabIndex = 202;
@@ -690,9 +661,8 @@
             // 
             // label212
             // 
-            label212.AutoSize = true;
-            label212.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label212.Location = new Point(218, 198);
+            label212.Font = new Font("Times New Roman", 14.25F);
+            label212.Location = new Point(249, 242);
             label212.Name = "label212";
             label212.Size = new Size(16, 21);
             label212.TabIndex = 201;
@@ -701,9 +671,8 @@
             // 
             // label211
             // 
-            label211.AutoSize = true;
-            label211.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label211.Location = new Point(325, 149);
+            label211.Font = new Font("Times New Roman", 14.25F);
+            label211.Location = new Point(404, 190);
             label211.Name = "label211";
             label211.Size = new Size(16, 21);
             label211.TabIndex = 200;
@@ -712,9 +681,8 @@
             // 
             // label210
             // 
-            label210.AutoSize = true;
-            label210.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label210.Location = new Point(325, 173);
+            label210.Font = new Font("Times New Roman", 14.25F);
+            label210.Location = new Point(404, 216);
             label210.Name = "label210";
             label210.Size = new Size(16, 21);
             label210.TabIndex = 199;
@@ -723,9 +691,8 @@
             // 
             // label209
             // 
-            label209.AutoSize = true;
-            label209.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label209.Location = new Point(324, 198);
+            label209.Font = new Font("Times New Roman", 14.25F);
+            label209.Location = new Point(403, 242);
             label209.Name = "label209";
             label209.Size = new Size(16, 21);
             label209.TabIndex = 198;
@@ -734,9 +701,8 @@
             // 
             // label208
             // 
-            label208.AutoSize = true;
-            label208.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label208.Location = new Point(430, 148);
+            label208.Font = new Font("Times New Roman", 14.25F);
+            label208.Location = new Point(548, 190);
             label208.Name = "label208";
             label208.Size = new Size(16, 21);
             label208.TabIndex = 197;
@@ -745,9 +711,8 @@
             // 
             // label207
             // 
-            label207.AutoSize = true;
-            label207.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label207.Location = new Point(430, 173);
+            label207.Font = new Font("Times New Roman", 14.25F);
+            label207.Location = new Point(548, 216);
             label207.Name = "label207";
             label207.Size = new Size(16, 21);
             label207.TabIndex = 196;
@@ -756,9 +721,8 @@
             // 
             // label206
             // 
-            label206.AutoSize = true;
-            label206.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label206.Location = new Point(429, 197);
+            label206.Font = new Font("Times New Roman", 14.25F);
+            label206.Location = new Point(548, 242);
             label206.Name = "label206";
             label206.Size = new Size(16, 21);
             label206.TabIndex = 195;
@@ -767,9 +731,8 @@
             // 
             // label205
             // 
-            label205.AutoSize = true;
-            label205.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label205.Location = new Point(336, 198);
+            label205.Font = new Font("Times New Roman", 14.25F);
+            label205.Location = new Point(428, 242);
             label205.Name = "label205";
             label205.Size = new Size(21, 21);
             label205.TabIndex = 194;
@@ -778,9 +741,8 @@
             // 
             // label204
             // 
-            label204.AutoSize = true;
-            label204.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label204.Location = new Point(133, 149);
+            label204.Font = new Font("Times New Roman", 14.25F);
+            label204.Location = new Point(164, 190);
             label204.Name = "label204";
             label204.Size = new Size(16, 21);
             label204.TabIndex = 193;
@@ -789,9 +751,8 @@
             // 
             // label194
             // 
-            label194.AutoSize = true;
-            label194.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label194.Location = new Point(133, 173);
+            label194.Font = new Font("Times New Roman", 14.25F);
+            label194.Location = new Point(164, 216);
             label194.Name = "label194";
             label194.Size = new Size(16, 21);
             label194.TabIndex = 192;
@@ -800,9 +761,8 @@
             // 
             // label203
             // 
-            label203.AutoSize = true;
-            label203.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label203.Location = new Point(134, 197);
+            label203.Font = new Font("Times New Roman", 14.25F);
+            label203.Location = new Point(165, 242);
             label203.Name = "label203";
             label203.Size = new Size(16, 21);
             label203.TabIndex = 191;
@@ -811,9 +771,8 @@
             // 
             // label202
             // 
-            label202.AutoSize = true;
-            label202.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label202.Location = new Point(244, 149);
+            label202.Font = new Font("Times New Roman", 14.25F);
+            label202.Location = new Point(309, 190);
             label202.Name = "label202";
             label202.Size = new Size(16, 21);
             label202.TabIndex = 190;
@@ -822,9 +781,8 @@
             // 
             // label201
             // 
-            label201.AutoSize = true;
-            label201.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label201.Location = new Point(245, 173);
+            label201.Font = new Font("Times New Roman", 14.25F);
+            label201.Location = new Point(310, 216);
             label201.Name = "label201";
             label201.Size = new Size(16, 21);
             label201.TabIndex = 189;
@@ -833,9 +791,8 @@
             // 
             // label200
             // 
-            label200.AutoSize = true;
-            label200.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label200.Location = new Point(245, 198);
+            label200.Font = new Font("Times New Roman", 14.25F);
+            label200.Location = new Point(310, 242);
             label200.Name = "label200";
             label200.Size = new Size(16, 21);
             label200.TabIndex = 188;
@@ -844,9 +801,8 @@
             // 
             // label199
             // 
-            label199.AutoSize = true;
-            label199.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label199.Location = new Point(352, 148);
+            label199.Font = new Font("Times New Roman", 14.25F);
+            label199.Location = new Point(458, 190);
             label199.Name = "label199";
             label199.Size = new Size(16, 21);
             label199.TabIndex = 187;
@@ -855,9 +811,8 @@
             // 
             // label198
             // 
-            label198.AutoSize = true;
-            label198.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label198.Location = new Point(352, 173);
+            label198.Font = new Font("Times New Roman", 14.25F);
+            label198.Location = new Point(458, 216);
             label198.Name = "label198";
             label198.Size = new Size(16, 21);
             label198.TabIndex = 186;
@@ -866,9 +821,8 @@
             // 
             // label197
             // 
-            label197.AutoSize = true;
-            label197.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label197.Location = new Point(352, 197);
+            label197.Font = new Font("Times New Roman", 14.25F);
+            label197.Location = new Point(458, 242);
             label197.Name = "label197";
             label197.Size = new Size(16, 21);
             label197.TabIndex = 185;
@@ -877,9 +831,8 @@
             // 
             // label196
             // 
-            label196.AutoSize = true;
-            label196.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label196.Location = new Point(230, 199);
+            label196.Font = new Font("Times New Roman", 14.25F);
+            label196.Location = new Point(276, 242);
             label196.Name = "label196";
             label196.Size = new Size(21, 21);
             label196.TabIndex = 184;
@@ -888,9 +841,8 @@
             // 
             // label195
             // 
-            label195.AutoSize = true;
-            label195.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label195.Location = new Point(230, 173);
+            label195.Font = new Font("Times New Roman", 14.25F);
+            label195.Location = new Point(276, 216);
             label195.Name = "label195";
             label195.Size = new Size(21, 21);
             label195.TabIndex = 183;
@@ -899,9 +851,8 @@
             // 
             // label193
             // 
-            label193.AutoSize = true;
-            label193.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label193.Location = new Point(336, 173);
+            label193.Font = new Font("Times New Roman", 14.25F);
+            label193.Location = new Point(428, 216);
             label193.Name = "label193";
             label193.Size = new Size(21, 21);
             label193.TabIndex = 181;
@@ -910,9 +861,8 @@
             // 
             // label192
             // 
-            label192.AutoSize = true;
-            label192.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label192.Location = new Point(337, 151);
+            label192.Font = new Font("Times New Roman", 14.25F);
+            label192.Location = new Point(428, 190);
             label192.Name = "label192";
             label192.Size = new Size(21, 21);
             label192.TabIndex = 180;
@@ -921,9 +871,8 @@
             // 
             // label191
             // 
-            label191.AutoSize = true;
-            label191.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label191.Location = new Point(228, 151);
+            label191.Font = new Font("Times New Roman", 14.25F);
+            label191.Location = new Point(276, 190);
             label191.Name = "label191";
             label191.Size = new Size(21, 21);
             label191.TabIndex = 179;
@@ -932,166 +881,156 @@
             // 
             // label102
             // 
-            label102.AutoSize = true;
-            label102.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label102.Location = new Point(364, 198);
+            label102.Font = new Font("Times New Roman", 14.25F);
+            label102.Location = new Point(474, 242);
             label102.Name = "label102";
-            label102.Size = new Size(31, 21);
+            label102.Size = new Size(70, 21);
             label102.TabIndex = 178;
             label102.Text = "x₃₃";
             label102.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label117
             // 
-            label117.AutoSize = true;
-            label117.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label117.Location = new Point(364, 172);
+            label117.Font = new Font("Times New Roman", 14.25F);
+            label117.Location = new Point(474, 216);
             label117.Name = "label117";
-            label117.Size = new Size(31, 21);
+            label117.Size = new Size(70, 21);
             label117.TabIndex = 177;
             label117.Text = "x₃₂";
             label117.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label118
             // 
-            label118.AutoSize = true;
-            label118.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label118.Location = new Point(364, 148);
+            label118.BackColor = Color.Transparent;
+            label118.Font = new Font("Times New Roman", 14.25F);
+            label118.Location = new Point(474, 190);
             label118.Name = "label118";
-            label118.Size = new Size(31, 21);
+            label118.Size = new Size(70, 21);
             label118.TabIndex = 176;
             label118.Text = "x₃₁";
             label118.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label178
             // 
-            label178.AutoSize = true;
-            label178.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label178.Location = new Point(146, 172);
+            label178.Font = new Font("Times New Roman", 14.25F);
+            label178.Location = new Point(178, 216);
             label178.Name = "label178";
-            label178.Size = new Size(31, 21);
+            label178.Size = new Size(70, 21);
             label178.TabIndex = 170;
             label178.Text = "x₁₂";
-            label178.TextAlign = ContentAlignment.MiddleLeft;
+            label178.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label184
             // 
-            label184.AutoSize = true;
-            label184.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label184.Location = new Point(257, 198);
+            label184.Font = new Font("Times New Roman", 14.25F);
+            label184.Location = new Point(327, 242);
             label184.Name = "label184";
-            label184.Size = new Size(31, 21);
+            label184.Size = new Size(75, 21);
             label184.TabIndex = 175;
             label184.Text = "x₂₃";
-            label184.TextAlign = ContentAlignment.MiddleLeft;
+            label184.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label185
             // 
-            label185.AutoSize = true;
-            label185.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label185.Location = new Point(256, 148);
+            label185.BackColor = Color.Transparent;
+            label185.Font = new Font("Times New Roman", 14.25F);
+            label185.Location = new Point(326, 190);
             label185.Name = "label185";
-            label185.Size = new Size(31, 21);
+            label185.Size = new Size(75, 21);
             label185.TabIndex = 171;
             label185.Text = "x₂₁";
             label185.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label186
             // 
-            label186.AutoSize = true;
-            label186.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label186.Location = new Point(146, 148);
+            label186.BackColor = Color.Transparent;
+            label186.Font = new Font("Times New Roman", 14.25F);
+            label186.Location = new Point(178, 190);
             label186.Name = "label186";
-            label186.Size = new Size(31, 21);
+            label186.Size = new Size(70, 21);
             label186.TabIndex = 168;
             label186.Text = "x₁₁";
             label186.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label187
             // 
-            label187.AutoSize = true;
-            label187.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label187.Location = new Point(146, 198);
+            label187.Font = new Font("Times New Roman", 14.25F);
+            label187.Location = new Point(178, 242);
             label187.Name = "label187";
-            label187.Size = new Size(31, 21);
+            label187.Size = new Size(70, 21);
             label187.TabIndex = 174;
             label187.Text = "x₁₃";
-            label187.TextAlign = ContentAlignment.MiddleLeft;
+            label187.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label188
             // 
-            label188.AutoSize = true;
-            label188.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label188.Location = new Point(257, 173);
+            label188.Font = new Font("Times New Roman", 14.25F);
+            label188.Location = new Point(327, 216);
             label188.Name = "label188";
-            label188.Size = new Size(31, 21);
+            label188.Size = new Size(75, 21);
             label188.TabIndex = 172;
             label188.Text = "x₂₂";
-            label188.TextAlign = ContentAlignment.MiddleLeft;
+            label188.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label189
             // 
-            label189.Font = new Font("Times New Roman", 60F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label189.Font = new Font("Times New Roman", 75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label189.ForeColor = Color.Black;
-            label189.Location = new Point(440, 130);
+            label189.Location = new Point(558, 155);
             label189.Name = "label189";
-            label189.Size = new Size(45, 98);
+            label189.Size = new Size(51, 124);
             label189.TabIndex = 173;
             label189.Text = "]";
             label189.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label190
             // 
-            label190.Font = new Font("Times New Roman", 60F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label190.Font = new Font("Times New Roman", 75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label190.ForeColor = Color.Black;
-            label190.Location = new Point(103, 133);
+            label190.Location = new Point(128, 156);
             label190.Name = "label190";
-            label190.Size = new Size(42, 92);
+            label190.Size = new Size(49, 120);
             label190.TabIndex = 169;
             label190.Text = "[";
             label190.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label179
             // 
-            label179.AutoSize = true;
-            label179.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label179.Location = new Point(447, 99);
+            label179.Font = new Font("Times New Roman", 15.75F);
+            label179.Location = new Point(489, 118);
             label179.Name = "label179";
-            label179.Size = new Size(27, 19);
+            label179.Size = new Size(70, 30);
             label179.TabIndex = 167;
             label179.Text = "b₃₁";
             label179.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label180
             // 
-            label180.AutoSize = true;
-            label180.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label180.Location = new Point(448, 75);
+            label180.Font = new Font("Times New Roman", 15.75F);
+            label180.Location = new Point(489, 88);
             label180.Name = "label180";
-            label180.Size = new Size(27, 19);
+            label180.Size = new Size(70, 30);
             label180.TabIndex = 165;
             label180.Text = "b₂₁";
             label180.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label181
             // 
-            label181.AutoSize = true;
-            label181.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label181.Location = new Point(448, 51);
+            label181.Font = new Font("Times New Roman", 15.75F);
+            label181.Location = new Point(489, 59);
             label181.Name = "label181";
-            label181.Size = new Size(27, 19);
+            label181.Size = new Size(70, 30);
             label181.TabIndex = 163;
             label181.Text = "b₁₁";
             label181.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label182
             // 
-            label182.AutoSize = true;
-            label182.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label182.Font = new Font("Times New Roman", 75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label182.ForeColor = Color.Black;
-            label182.Location = new Point(403, 41);
+            label182.Location = new Point(444, 35);
             label182.Name = "label182";
-            label182.Size = new Size(55, 76);
+            label182.Size = new Size(55, 113);
             label182.TabIndex = 164;
             label182.Text = "[";
             label182.TextAlign = ContentAlignment.MiddleCenter;
@@ -1100,121 +1039,115 @@
             // 
             label183.AutoSize = true;
             label183.BackColor = Color.Transparent;
-            label183.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label183.Font = new Font("Times New Roman", 75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label183.ForeColor = Color.Black;
-            label183.Location = new Point(466, 41);
+            label183.Location = new Point(540, 35);
             label183.Name = "label183";
-            label183.Size = new Size(55, 76);
+            label183.Size = new Size(82, 114);
             label183.TabIndex = 166;
             label183.Text = "]";
             label183.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label103
             // 
-            label103.AutoSize = true;
-            label103.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label103.Location = new Point(299, 96);
+            label103.Font = new Font("Times New Roman", 15.75F);
+            label103.Location = new Point(326, 118);
             label103.Name = "label103";
-            label103.Size = new Size(26, 21);
+            label103.Size = new Size(70, 30);
             label103.TabIndex = 162;
             label103.Text = "i₃₃";
             label103.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label107
             // 
-            label107.AutoSize = true;
-            label107.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label107.Location = new Point(299, 70);
+            label107.Font = new Font("Times New Roman", 15.75F);
+            label107.Location = new Point(326, 88);
             label107.Name = "label107";
-            label107.Size = new Size(26, 21);
+            label107.Size = new Size(70, 30);
             label107.TabIndex = 161;
             label107.Text = "i₃₂";
             label107.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label108
             // 
-            label108.AutoSize = true;
-            label108.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label108.Location = new Point(299, 46);
+            label108.BackColor = Color.Transparent;
+            label108.Font = new Font("Times New Roman", 15.75F);
+            label108.Location = new Point(326, 59);
             label108.Name = "label108";
-            label108.Size = new Size(26, 21);
+            label108.Size = new Size(70, 30);
             label108.TabIndex = 160;
             label108.Text = "i₃₁";
             label108.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label170
             // 
-            label170.AutoSize = true;
-            label170.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label170.Location = new Point(137, 70);
+            label170.Font = new Font("Times New Roman", 15.75F);
+            label170.Location = new Point(165, 88);
             label170.Name = "label170";
-            label170.Size = new Size(26, 21);
+            label170.Size = new Size(70, 30);
             label170.TabIndex = 154;
             label170.Text = "i₁₂";
-            label170.TextAlign = ContentAlignment.MiddleLeft;
+            label170.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label171
             // 
-            label171.AutoSize = true;
-            label171.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label171.Location = new Point(218, 96);
+            label171.Font = new Font("Times New Roman", 15.75F);
+            label171.Location = new Point(245, 118);
             label171.Name = "label171";
-            label171.Size = new Size(26, 21);
+            label171.Size = new Size(70, 30);
             label171.TabIndex = 159;
             label171.Text = "i₂₃";
-            label171.TextAlign = ContentAlignment.MiddleLeft;
+            label171.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label172
             // 
-            label172.AutoSize = true;
-            label172.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label172.Location = new Point(218, 46);
+            label172.BackColor = Color.Transparent;
+            label172.Font = new Font("Times New Roman", 15.75F);
+            label172.Location = new Point(245, 59);
             label172.Name = "label172";
-            label172.Size = new Size(26, 21);
+            label172.Size = new Size(70, 30);
             label172.TabIndex = 155;
             label172.Text = "i₂₁";
             label172.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label173
             // 
-            label173.AutoSize = true;
-            label173.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label173.Location = new Point(138, 46);
+            label173.BackColor = Color.Transparent;
+            label173.Font = new Font("Times New Roman", 15.75F);
+            label173.Location = new Point(165, 59);
             label173.Name = "label173";
-            label173.Size = new Size(26, 21);
+            label173.Size = new Size(70, 30);
             label173.TabIndex = 152;
             label173.Text = "i₁₁";
             label173.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label174
             // 
-            label174.AutoSize = true;
-            label174.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label174.Location = new Point(137, 96);
+            label174.Font = new Font("Times New Roman", 15.75F);
+            label174.Location = new Point(165, 118);
             label174.Name = "label174";
-            label174.Size = new Size(26, 21);
+            label174.Size = new Size(70, 30);
             label174.TabIndex = 158;
             label174.Text = "i₁₃";
-            label174.TextAlign = ContentAlignment.MiddleLeft;
+            label174.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label175
             // 
-            label175.AutoSize = true;
-            label175.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label175.Location = new Point(218, 71);
+            label175.Font = new Font("Times New Roman", 15.75F);
+            label175.Location = new Point(245, 88);
             label175.Name = "label175";
-            label175.Size = new Size(26, 21);
+            label175.Size = new Size(70, 30);
             label175.TabIndex = 156;
             label175.Text = "i₂₂";
-            label175.TextAlign = ContentAlignment.MiddleLeft;
+            label175.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label177
             // 
-            label177.Font = new Font("Times New Roman", 60F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label177.Font = new Font("Times New Roman", 75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label177.ForeColor = Color.Black;
-            label177.Location = new Point(363, 28);
+            label177.Location = new Point(395, 35);
             label177.Name = "label177";
-            label177.Size = new Size(45, 98);
+            label177.Size = new Size(50, 111);
             label177.TabIndex = 157;
             label177.Text = "]";
             label177.TextAlign = ContentAlignment.MiddleCenter;
@@ -1222,11 +1155,11 @@
             // label121
             // 
             label121.AutoSize = true;
-            label121.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label121.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label121.ForeColor = Color.Black;
-            label121.Location = new Point(87, 357);
+            label121.Location = new Point(53, 423);
             label121.Name = "label121";
-            label121.Size = new Size(37, 19);
+            label121.Size = new Size(44, 21);
             label121.TabIndex = 85;
             label121.Text = " X =";
             label121.TextAlign = ContentAlignment.MiddleCenter;
@@ -1234,43 +1167,43 @@
             // label120
             // 
             label120.AutoSize = true;
-            label120.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label120.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label120.ForeColor = Color.Black;
-            label120.Location = new Point(108, 263);
+            label120.Location = new Point(99, 329);
             label120.Name = "label120";
-            label120.Size = new Size(22, 19);
+            label120.Size = new Size(26, 21);
             label120.TabIndex = 72;
             label120.Text = " =";
             label120.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblX2
             // 
-            lblX2.AutoSize = true;
-            lblX2.Font = new Font("Times New Roman", 13.8F);
-            lblX2.Location = new Point(160, 262);
+            lblX2.Font = new Font("Times New Roman", 14.25F);
+            lblX2.Location = new Point(170, 330);
             lblX2.Name = "lblX2";
-            lblX2.Size = new Size(31, 21);
+            lblX2.Size = new Size(70, 21);
             lblX2.TabIndex = 83;
             lblX2.Text = "x₂₁";
+            lblX2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblX1
             // 
-            lblX1.AutoSize = true;
-            lblX1.Font = new Font("Times New Roman", 13.8F);
-            lblX1.Location = new Point(160, 238);
+            lblX1.Font = new Font("Times New Roman", 14.25F);
+            lblX1.Location = new Point(170, 299);
             lblX1.Name = "lblX1";
-            lblX1.Size = new Size(31, 21);
+            lblX1.Size = new Size(70, 21);
             lblX1.TabIndex = 81;
             lblX1.Text = "x₁₁";
+            lblX1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label111
             // 
             label111.AutoSize = true;
-            label111.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label111.Font = new Font("Times New Roman", 75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label111.ForeColor = Color.Black;
-            label111.Location = new Point(121, 230);
+            label111.Location = new Point(111, 274);
             label111.Name = "label111";
-            label111.Size = new Size(55, 76);
+            label111.Size = new Size(82, 114);
             label111.TabIndex = 82;
             label111.Text = "[";
             label111.TextAlign = ContentAlignment.MiddleCenter;
@@ -1279,11 +1212,11 @@
             // 
             label112.AutoSize = true;
             label112.BackColor = Color.Transparent;
-            label112.Font = new Font("Times New Roman", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label112.Font = new Font("Times New Roman", 75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label112.ForeColor = Color.Black;
-            label112.Location = new Point(215, 230);
+            label112.Location = new Point(229, 275);
             label112.Name = "label112";
-            label112.Size = new Size(55, 76);
+            label112.Size = new Size(82, 114);
             label112.TabIndex = 84;
             label112.Text = "]";
             label112.TextAlign = ContentAlignment.MiddleCenter;
@@ -1291,11 +1224,11 @@
             // label119
             // 
             label119.AutoSize = true;
-            label119.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label119.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label119.ForeColor = Color.Black;
-            label119.Location = new Point(82, 185);
+            label119.Location = new Point(94, 196);
             label119.Name = "label119";
-            label119.Size = new Size(22, 19);
+            label119.Size = new Size(26, 21);
             label119.TabIndex = 71;
             label119.Text = " =";
             label119.TextAlign = ContentAlignment.MiddleCenter;
@@ -1303,11 +1236,11 @@
             // label97
             // 
             label97.AutoSize = true;
-            label97.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label97.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label97.ForeColor = Color.Black;
-            label97.Location = new Point(23, 67);
+            label97.Location = new Point(24, 90);
             label97.Name = "label97";
-            label97.Size = new Size(80, 19);
+            label97.Size = new Size(96, 21);
             label97.TabIndex = 8;
             label97.Text = "X = A⁻¹B =";
             label97.TextAlign = ContentAlignment.MiddleCenter;
@@ -1315,36 +1248,48 @@
             // label23
             // 
             label23.AutoSize = true;
-            label23.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label23.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label23.ForeColor = Color.FromArgb(40, 65, 95);
-            label23.Location = new Point(100, 4);
+            label23.Location = new Point(133, 10);
             label23.Name = "label23";
-            label23.Size = new Size(72, 19);
+            label23.Size = new Size(90, 24);
             label23.TabIndex = 3;
             label23.Text = "X = A⁻¹ B";
             // 
             // label24
             // 
-            label24.AutoSize = true;
             label24.Dock = DockStyle.Top;
-            label24.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label24.Font = new Font("Nirmala UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.FromArgb(40, 65, 95);
             label24.Location = new Point(0, 0);
             label24.Name = "label24";
-            label24.Size = new Size(101, 21);
+            label24.Size = new Size(759, 41);
             label24.TabIndex = 2;
             label24.Text = "7. Compute ";
+            label24.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label176
             // 
-            label176.Font = new Font("Times New Roman", 60F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label176.Font = new Font("Times New Roman", 75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label176.ForeColor = Color.Black;
-            label176.Location = new Point(105, 31);
+            label176.Location = new Point(127, 32);
             label176.Name = "label176";
-            label176.Size = new Size(42, 92);
+            label176.Size = new Size(51, 120);
             label176.TabIndex = 153;
             label176.Text = "[";
             label176.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label217
+            // 
+            label217.AutoSize = true;
+            label217.Font = new Font("Times New Roman", 75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label217.ForeColor = Color.Black;
+            label217.Location = new Point(111, 392);
+            label217.Name = "label217";
+            label217.Size = new Size(82, 114);
+            label217.TabIndex = 206;
+            label217.Text = "[";
+            label217.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel14
             // 
@@ -1365,10 +1310,10 @@
             // 
             label168.AutoSize = true;
             label168.BackColor = Color.FromArgb(192, 255, 255);
-            label168.Font = new Font("Times New Roman", 13.8F);
-            label168.Location = new Point(469, 62);
+            label168.Font = new Font("Times New Roman", 18F);
+            label168.Location = new Point(495, 72);
             label168.Name = "label168";
-            label168.Size = new Size(18, 21);
+            label168.Size = new Size(22, 27);
             label168.TabIndex = 92;
             label168.Text = "z";
             // 
@@ -1376,10 +1321,10 @@
             // 
             label167.AutoSize = true;
             label167.BackColor = Color.FromArgb(192, 255, 255);
-            label167.Font = new Font("Times New Roman", 13.8F);
-            label167.Location = new Point(343, 63);
+            label167.Font = new Font("Times New Roman", 18F);
+            label167.Location = new Point(369, 73);
             label167.Name = "label167";
-            label167.Size = new Size(19, 21);
+            label167.Size = new Size(24, 27);
             label167.TabIndex = 91;
             label167.Text = "y";
             // 
@@ -1387,10 +1332,10 @@
             // 
             label166.AutoSize = true;
             label166.BackColor = Color.FromArgb(192, 255, 255);
-            label166.Font = new Font("Times New Roman", 13.8F);
-            label166.Location = new Point(214, 64);
+            label166.Font = new Font("Times New Roman", 18F);
+            label166.Location = new Point(240, 74);
             label166.Name = "label166";
-            label166.Size = new Size(19, 21);
+            label166.Size = new Size(24, 27);
             label166.TabIndex = 90;
             label166.Text = "x";
             // 
@@ -1398,25 +1343,25 @@
             // 
             SolSys.BackColor = Color.LightCyan;
             SolSys.Dock = DockStyle.Fill;
-            SolSys.Font = new Font("Times New Roman", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            SolSys.Font = new Font("Times New Roman", 18F);
             SolSys.ForeColor = Color.Black;
-            SolSys.Location = new Point(0, 21);
+            SolSys.Location = new Point(0, 41);
             SolSys.Name = "SolSys";
-            SolSys.Size = new Size(759, 108);
+            SolSys.Size = new Size(759, 88);
             SolSys.TabIndex = 86;
             SolSys.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label26
             // 
-            label26.AutoSize = true;
             label26.Dock = DockStyle.Top;
-            label26.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label26.Font = new Font("Nirmala UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label26.ForeColor = Color.FromArgb(40, 65, 95);
             label26.Location = new Point(0, 0);
             label26.Name = "label26";
-            label26.Size = new Size(200, 21);
+            label26.Size = new Size(759, 41);
             label26.TabIndex = 2;
             label26.Text = "8. Solution of the System";
+            label26.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // panel5
             // 
@@ -1468,12 +1413,12 @@
             // label96
             // 
             label96.AutoSize = true;
-            label96.BackColor = Color.LightCyan;
-            label96.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label96.BackColor = Color.Transparent;
+            label96.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label96.ForeColor = Color.Black;
-            label96.Location = new Point(56, 214);
+            label96.Location = new Point(3, 57);
             label96.Name = "label96";
-            label96.Size = new Size(47, 19);
+            label96.Size = new Size(70, 27);
             label96.TabIndex = 61;
             label96.Text = "A⁻¹=  ";
             label96.TextAlign = ContentAlignment.MiddleCenter;
@@ -1481,11 +1426,11 @@
             // label83
             // 
             label83.AutoSize = true;
-            label83.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label83.Font = new Font("Times New Roman", 18F);
             label83.ForeColor = Color.Black;
-            label83.Location = new Point(96, 98);
+            label83.Location = new Point(126, 116);
             label83.Name = "label83";
-            label83.Size = new Size(17, 19);
+            label83.Size = new Size(24, 27);
             label83.TabIndex = 12;
             label83.Text = "1";
             label83.TextAlign = ContentAlignment.MiddleCenter;
@@ -1493,11 +1438,11 @@
             // lblDetA1
             // 
             lblDetA1.AutoSize = true;
-            lblDetA1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblDetA1.Font = new Font("Times New Roman", 18F);
             lblDetA1.ForeColor = Color.Black;
-            lblDetA1.Location = new Point(89, 120);
+            lblDetA1.Location = new Point(117, 149);
             lblDetA1.Name = "lblDetA1";
-            lblDetA1.Size = new Size(28, 19);
+            lblDetA1.Size = new Size(42, 27);
             lblDetA1.TabIndex = 11;
             lblDetA1.Text = "det\r\n";
             lblDetA1.TextAlign = ContentAlignment.MiddleCenter;
@@ -1505,62 +1450,60 @@
             // label81
             // 
             label81.AutoSize = true;
-            label81.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label81.Font = new Font("Times New Roman", 18F);
             label81.ForeColor = Color.Black;
-            label81.Location = new Point(74, 108);
+            label81.Location = new Point(95, 133);
             label81.Name = "label81";
-            label81.Size = new Size(44, 19);
+            label81.Size = new Size(66, 27);
             label81.TabIndex = 10;
             label81.Text = "= ──";
             label81.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblDetA
             // 
-            lblDetA.AutoSize = true;
-            lblDetA.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblDetA.Font = new Font("Times New Roman", 15.75F);
             lblDetA.ForeColor = Color.Black;
-            lblDetA.Location = new Point(117, 55);
+            lblDetA.Location = new Point(234, 64);
             lblDetA.Name = "lblDetA";
-            lblDetA.Size = new Size(49, 19);
+            lblDetA.Size = new Size(63, 29);
             lblDetA.TabIndex = 9;
             lblDetA.Text = "det(A)";
             lblDetA.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label79
             // 
-            label79.AutoSize = true;
-            label79.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label79.BackColor = Color.Transparent;
+            label79.Font = new Font("Times New Roman", 15.75F);
             label79.ForeColor = Color.Black;
-            label79.Location = new Point(137, 34);
+            label79.Location = new Point(248, 34);
             label79.Name = "label79";
-            label79.Size = new Size(17, 19);
+            label79.Size = new Size(33, 27);
             label79.TabIndex = 8;
             label79.Text = "1";
             label79.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label78
             // 
-            label78.AutoSize = true;
-            label78.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label78.Font = new Font("Times New Roman", 15.75F);
             label78.ForeColor = Color.Black;
-            label78.Location = new Point(69, 44);
+            label78.Location = new Point(171, 50);
             label78.Name = "label78";
-            label78.Size = new Size(156, 19);
+            label78.Size = new Size(143, 25);
             label78.TabIndex = 7;
             label78.Text = "A⁻¹=  ───── (adj(A))";
             label78.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label77
             // 
-            label77.AutoSize = true;
             label77.Dock = DockStyle.Top;
-            label77.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label77.Font = new Font("Nirmala UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label77.ForeColor = Color.FromArgb(40, 65, 95);
             label77.Location = new Point(0, 0);
             label77.Name = "label77";
-            label77.Size = new Size(136, 21);
+            label77.Size = new Size(558, 41);
             label77.TabIndex = 4;
             label77.Text = "5. Inverse Matrix";
+            label77.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label19
             // 
@@ -1586,140 +1529,136 @@
             // panel7
             // 
             panel7.BackColor = Color.LightCyan;
+            panel7.BorderStyle = BorderStyle.FixedSingle;
+            panel7.Controls.Add(label160);
+            panel7.Controls.Add(label164);
+            panel7.Controls.Add(label162);
+            panel7.Controls.Add(label165);
             panel7.Controls.Add(label94);
+            panel7.Controls.Add(label96);
             panel7.Controls.Add(label95);
             panel7.Controls.Add(label157);
-            panel7.Controls.Add(label164);
             panel7.Controls.Add(label158);
             panel7.Controls.Add(label163);
-            panel7.Controls.Add(label162);
-            panel7.Controls.Add(label160);
             panel7.Controls.Add(label161);
-            panel7.Controls.Add(label165);
             panel7.Controls.Add(label159);
-            panel7.Location = new Point(51, 172);
+            panel7.Location = new Point(77, 216);
             panel7.Margin = new Padding(3, 2, 3, 2);
             panel7.Name = "panel7";
-            panel7.Size = new Size(334, 104);
+            panel7.Size = new Size(412, 138);
             panel7.TabIndex = 62;
+            // 
+            // label160
+            // 
+            label160.Font = new Font("Times New Roman", 15.75F);
+            label160.Location = new Point(101, 83);
+            label160.Name = "label160";
+            label160.Size = new Size(75, 30);
+            label160.TabIndex = 146;
+            label160.Text = "i₁₃";
+            label160.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label164
+            // 
+            label164.Font = new Font("Times New Roman", 15.75F);
+            label164.Location = new Point(101, 53);
+            label164.Name = "label164";
+            label164.Size = new Size(75, 30);
+            label164.TabIndex = 142;
+            label164.Text = "i₁₂";
+            label164.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label162
+            // 
+            label162.BackColor = Color.Transparent;
+            label162.Font = new Font("Times New Roman", 15.75F);
+            label162.Location = new Point(101, 23);
+            label162.Name = "label162";
+            label162.Size = new Size(75, 30);
+            label162.TabIndex = 140;
+            label162.Text = "i₁₁";
+            label162.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label165
+            // 
+            label165.Font = new Font("Times New Roman", 80.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label165.ForeColor = Color.Black;
+            label165.Location = new Point(55, -6);
+            label165.Name = "label165";
+            label165.Size = new Size(59, 130);
+            label165.TabIndex = 141;
+            label165.Text = "[";
+            label165.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label94
             // 
-            label94.AutoSize = true;
-            label94.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label94.Location = new Point(225, 67);
+            label94.Font = new Font("Times New Roman", 15.75F);
+            label94.Location = new Point(285, 83);
             label94.Name = "label94";
-            label94.Size = new Size(26, 21);
+            label94.Size = new Size(75, 30);
             label94.TabIndex = 150;
             label94.Text = "i₃₃";
             label94.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label95
             // 
-            label95.AutoSize = true;
-            label95.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label95.Location = new Point(225, 41);
+            label95.Font = new Font("Times New Roman", 15.75F);
+            label95.Location = new Point(285, 53);
             label95.Name = "label95";
-            label95.Size = new Size(26, 21);
+            label95.Size = new Size(75, 30);
             label95.TabIndex = 149;
             label95.Text = "i₃₂";
             label95.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label157
             // 
-            label157.AutoSize = true;
-            label157.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label157.Location = new Point(225, 17);
+            label157.BackColor = Color.Transparent;
+            label157.Font = new Font("Times New Roman", 15.75F);
+            label157.Location = new Point(285, 23);
             label157.Name = "label157";
-            label157.Size = new Size(26, 21);
+            label157.Size = new Size(75, 30);
             label157.TabIndex = 148;
             label157.Text = "i₃₁";
             label157.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label164
-            // 
-            label164.AutoSize = true;
-            label164.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label164.Location = new Point(85, 41);
-            label164.Name = "label164";
-            label164.Size = new Size(26, 21);
-            label164.TabIndex = 142;
-            label164.Text = "i₁₂";
-            label164.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // label158
             // 
-            label158.AutoSize = true;
-            label158.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label158.Location = new Point(157, 67);
+            label158.Font = new Font("Times New Roman", 15.75F);
+            label158.Location = new Point(191, 83);
             label158.Name = "label158";
-            label158.Size = new Size(26, 21);
+            label158.Size = new Size(75, 30);
             label158.TabIndex = 147;
             label158.Text = "i₂₃";
-            label158.TextAlign = ContentAlignment.MiddleLeft;
+            label158.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label163
             // 
-            label163.AutoSize = true;
-            label163.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label163.Location = new Point(157, 17);
+            label163.BackColor = Color.Transparent;
+            label163.Font = new Font("Times New Roman", 15.75F);
+            label163.Location = new Point(191, 23);
             label163.Name = "label163";
-            label163.Size = new Size(26, 21);
+            label163.Size = new Size(75, 30);
             label163.TabIndex = 143;
             label163.Text = "i₂₁";
             label163.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label162
-            // 
-            label162.AutoSize = true;
-            label162.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label162.Location = new Point(85, 17);
-            label162.Name = "label162";
-            label162.Size = new Size(26, 21);
-            label162.TabIndex = 140;
-            label162.Text = "i₁₁";
-            label162.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label160
-            // 
-            label160.AutoSize = true;
-            label160.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label160.Location = new Point(85, 67);
-            label160.Name = "label160";
-            label160.Size = new Size(26, 21);
-            label160.TabIndex = 146;
-            label160.Text = "i₁₃";
-            label160.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // label161
             // 
-            label161.AutoSize = true;
-            label161.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label161.Location = new Point(157, 42);
+            label161.Font = new Font("Times New Roman", 15.75F);
+            label161.Location = new Point(191, 53);
             label161.Name = "label161";
-            label161.Size = new Size(26, 21);
+            label161.Size = new Size(75, 30);
             label161.TabIndex = 144;
             label161.Text = "i₂₂";
-            label161.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // label165
-            // 
-            label165.Font = new Font("Times New Roman", 60F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label165.ForeColor = Color.Black;
-            label165.Location = new Point(45, 2);
-            label165.Name = "label165";
-            label165.Size = new Size(42, 92);
-            label165.TabIndex = 141;
-            label165.Text = "[";
-            label165.TextAlign = ContentAlignment.MiddleCenter;
+            label161.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label159
             // 
-            label159.Font = new Font("Times New Roman", 60F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label159.Font = new Font("Times New Roman", 80.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label159.ForeColor = Color.Black;
-            label159.Location = new Point(285, -1);
+            label159.Location = new Point(360, -6);
             label159.Name = "label159";
-            label159.Size = new Size(45, 98);
+            label159.Size = new Size(54, 130);
             label159.TabIndex = 145;
             label159.Text = "]";
             label159.TextAlign = ContentAlignment.MiddleCenter;
@@ -1728,7 +1667,6 @@
             // 
             pnlInvRes.BackColor = Color.Azure;
             pnlInvRes.Controls.Add(label88);
-            pnlInvRes.Controls.Add(label96);
             pnlInvRes.Controls.Add(label89);
             pnlInvRes.Controls.Add(label148);
             pnlInvRes.Controls.Add(label149);
@@ -1751,7 +1689,7 @@
             pnlInvRes.Controls.Add(panel7);
             pnlInvRes.Controls.Add(label152);
             pnlInvRes.Dock = DockStyle.Fill;
-            pnlInvRes.Font = new Font("Times New Roman", 10.8F);
+            pnlInvRes.Font = new Font("Times New Roman", 18F);
             pnlInvRes.Location = new Point(566, 484);
             pnlInvRes.Margin = new Padding(3, 2, 3, 2);
             pnlInvRes.Name = "pnlInvRes";
@@ -1760,133 +1698,127 @@
             // 
             // label88
             // 
-            label88.AutoSize = true;
-            label88.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label88.Location = new Point(278, 134);
+            label88.Font = new Font("Times New Roman", 15.75F);
+            label88.Location = new Point(333, 169);
             label88.Name = "label88";
-            label88.Size = new Size(35, 21);
+            label88.Size = new Size(50, 35);
             label88.TabIndex = 139;
             label88.Text = "C₃₃";
             label88.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label89
             // 
-            label89.AutoSize = true;
-            label89.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label89.Location = new Point(278, 108);
+            label89.Font = new Font("Times New Roman", 15.75F);
+            label89.Location = new Point(333, 134);
             label89.Name = "label89";
-            label89.Size = new Size(35, 21);
+            label89.Size = new Size(50, 35);
             label89.TabIndex = 138;
             label89.Text = "C₃₂";
             label89.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label148
             // 
-            label148.AutoSize = true;
-            label148.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label148.Location = new Point(278, 84);
+            label148.BackColor = Color.Transparent;
+            label148.Font = new Font("Times New Roman", 15.75F);
+            label148.Location = new Point(333, 99);
             label148.Name = "label148";
-            label148.Size = new Size(35, 21);
+            label148.Size = new Size(50, 35);
             label148.TabIndex = 137;
             label148.Text = "C₃₁";
             label148.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label149
             // 
-            label149.AutoSize = true;
-            label149.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label149.Location = new Point(221, 134);
+            label149.Font = new Font("Times New Roman", 15.75F);
+            label149.Location = new Point(267, 169);
             label149.Name = "label149";
-            label149.Size = new Size(35, 21);
+            label149.Size = new Size(50, 35);
             label149.TabIndex = 136;
             label149.Text = "C₂₃";
-            label149.TextAlign = ContentAlignment.MiddleLeft;
+            label149.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label150
             // 
             label150.AutoSize = true;
-            label150.Font = new Font("Times New Roman", 60F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label150.Font = new Font("Times New Roman", 75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label150.ForeColor = Color.Black;
-            label150.Location = new Point(304, 68);
+            label150.Location = new Point(363, 85);
             label150.Name = "label150";
-            label150.Size = new Size(65, 90);
+            label150.Size = new Size(82, 114);
             label150.TabIndex = 134;
             label150.Text = "]";
             label150.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label151
             // 
-            label151.AutoSize = true;
-            label151.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label151.Location = new Point(165, 134);
+            label151.Font = new Font("Times New Roman", 15.75F);
+            label151.Location = new Point(201, 169);
             label151.Name = "label151";
-            label151.Size = new Size(35, 21);
+            label151.Size = new Size(50, 35);
             label151.TabIndex = 135;
             label151.Text = "C₁₃";
-            label151.TextAlign = ContentAlignment.MiddleLeft;
+            label151.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label153
             // 
-            label153.AutoSize = true;
-            label153.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label153.Location = new Point(221, 109);
+            label153.Font = new Font("Times New Roman", 15.75F);
+            label153.Location = new Point(267, 134);
             label153.Name = "label153";
-            label153.Size = new Size(35, 21);
+            label153.Size = new Size(50, 35);
             label153.TabIndex = 133;
             label153.Text = "C₂₂";
-            label153.TextAlign = ContentAlignment.MiddleLeft;
+            label153.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label154
             // 
-            label154.AutoSize = true;
-            label154.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label154.Location = new Point(165, 84);
+            label154.BackColor = Color.Transparent;
+            label154.Font = new Font("Times New Roman", 15.75F);
+            label154.Location = new Point(201, 99);
             label154.Name = "label154";
-            label154.Size = new Size(35, 21);
+            label154.Size = new Size(50, 35);
             label154.TabIndex = 129;
             label154.Text = "C₁₁";
             label154.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label155
             // 
-            label155.AutoSize = true;
-            label155.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label155.Location = new Point(221, 84);
+            label155.BackColor = Color.Transparent;
+            label155.Font = new Font("Times New Roman", 15.75F);
+            label155.Location = new Point(267, 99);
             label155.Name = "label155";
-            label155.Size = new Size(35, 21);
+            label155.Size = new Size(50, 35);
             label155.TabIndex = 132;
             label155.Text = "C₂₁";
             label155.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label156
             // 
-            label156.AutoSize = true;
-            label156.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label156.Location = new Point(165, 108);
+            label156.Font = new Font("Times New Roman", 15.75F);
+            label156.Location = new Point(201, 134);
             label156.Name = "label156";
-            label156.Size = new Size(35, 21);
+            label156.Size = new Size(50, 35);
             label156.TabIndex = 131;
             label156.Text = "C₁₂";
-            label156.TextAlign = ContentAlignment.MiddleLeft;
+            label156.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label76
             // 
             label76.AutoSize = true;
-            label76.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label76.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label76.ForeColor = Color.FromArgb(40, 65, 95);
-            label76.Location = new Point(147, 4);
+            label76.Location = new Point(171, 7);
             label76.Name = "label76";
-            label76.Size = new Size(44, 19);
+            label76.Size = new Size(55, 24);
             label76.TabIndex = 5;
             label76.Text = "(A⁻¹ )";
             // 
             // label152
             // 
-            label152.Font = new Font("Times New Roman", 60F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label152.Font = new Font("Times New Roman", 75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label152.ForeColor = Color.Black;
-            label152.Location = new Point(126, 67);
+            label152.Location = new Point(163, 86);
             label152.Name = "label152";
-            label152.Size = new Size(42, 94);
+            label152.Size = new Size(55, 113);
             label152.TabIndex = 130;
             label152.Text = "[";
             label152.TextAlign = ContentAlignment.MiddleCenter;
@@ -2272,7 +2204,6 @@
             tblInv.SetRowSpan(pnlCof, 2);
             pnlCof.Size = new Size(557, 655);
             pnlCof.TabIndex = 2;
-            pnlCof.Paint += pnlCof_Paint;
             // 
             // label106
             // 
@@ -2282,6 +2213,7 @@
             label106.Size = new Size(38, 28);
             label106.TabIndex = 117;
             label106.Text = "C₃₃";
+            label106.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label109
             // 
@@ -2311,6 +2243,7 @@
             label113.Size = new Size(38, 28);
             label113.TabIndex = 114;
             label113.Text = "C₃₃";
+            label113.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label114
             // 
@@ -2339,6 +2272,7 @@
             label116.Size = new Size(50, 28);
             label116.TabIndex = 110;
             label116.Text = "-C₃₂";
+            label116.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label122
             // 
@@ -2377,6 +2311,7 @@
             label127.Size = new Size(38, 28);
             label127.TabIndex = 106;
             label127.Text = "C₃₂";
+            label127.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label130
             // 
@@ -2406,6 +2341,7 @@
             label132.Size = new Size(36, 23);
             label132.TabIndex = 103;
             label132.Text = "C₃₁";
+            label132.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label133
             // 
@@ -2444,6 +2380,7 @@
             label136.Size = new Size(38, 28);
             label136.TabIndex = 99;
             label136.Text = "C₃₁";
+            label136.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label137
             // 
@@ -2467,11 +2404,12 @@
             // label42
             // 
             label42.Font = new Font("Times New Roman", 15.75F);
-            label42.Location = new Point(435, 200);
+            label42.Location = new Point(432, 198);
             label42.Name = "label42";
             label42.Size = new Size(50, 28);
             label42.TabIndex = 97;
             label42.Text = "-C₂₃";
+            label42.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label46
             // 
@@ -2501,6 +2439,7 @@
             label60.Size = new Size(38, 28);
             label60.TabIndex = 94;
             label60.Text = "C₂₃";
+            label60.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label72
             // 
@@ -2524,11 +2463,12 @@
             // label82
             // 
             label82.Font = new Font("Times New Roman", 15.75F);
-            label82.Location = new Point(284, 200);
+            label82.Location = new Point(284, 197);
             label82.Name = "label82";
             label82.Size = new Size(38, 28);
             label82.TabIndex = 90;
             label82.Text = "C₂₂";
+            label82.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label84
             // 
@@ -2567,6 +2507,7 @@
             label87.Size = new Size(38, 28);
             label87.TabIndex = 86;
             label87.Text = "C₂₂";
+            label87.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label90
             // 
@@ -2596,6 +2537,7 @@
             label92.Size = new Size(43, 23);
             label92.TabIndex = 83;
             label92.Text = "-C₂₁";
+            label92.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label93
             // 
@@ -2634,6 +2576,7 @@
             label100.Size = new Size(38, 28);
             label100.TabIndex = 79;
             label100.Text = "C₂₁";
+            label100.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label104
             // 
@@ -2657,11 +2600,12 @@
             // label66
             // 
             label66.Font = new Font("Times New Roman", 15.75F);
-            label66.Location = new Point(437, 104);
+            label66.Location = new Point(434, 102);
             label66.Name = "label66";
             label66.Size = new Size(50, 28);
             label66.TabIndex = 77;
             label66.Text = "C₁₃";
+            label66.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label67
             // 
@@ -2686,11 +2630,12 @@
             // 
             label69.BackColor = Color.Transparent;
             label69.Font = new Font("Times New Roman", 15.75F);
-            label69.Location = new Point(438, 77);
+            label69.Location = new Point(438, 75);
             label69.Name = "label69";
             label69.Size = new Size(38, 28);
             label69.TabIndex = 74;
             label69.Text = "C₁₃";
+            label69.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label70
             // 
@@ -2875,11 +2820,12 @@
             // lblCof12
             // 
             lblCof12.Font = new Font("Times New Roman", 15.75F);
-            lblCof12.Location = new Point(279, 104);
+            lblCof12.Location = new Point(278, 101);
             lblCof12.Name = "lblCof12";
             lblCof12.Size = new Size(50, 28);
             lblCof12.TabIndex = 27;
             lblCof12.Text = "-C₁₂";
+            lblCof12.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label48
             // 
@@ -2913,11 +2859,12 @@
             // 
             lblC12.BackColor = Color.Transparent;
             lblC12.Font = new Font("Times New Roman", 15.75F);
-            lblC12.Location = new Point(285, 77);
+            lblC12.Location = new Point(285, 74);
             lblC12.Name = "lblC12";
             lblC12.Size = new Size(38, 28);
             lblC12.TabIndex = 23;
             lblC12.Text = "C₁₂";
+            lblC12.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label52
             // 
@@ -2969,11 +2916,12 @@
             // 
             lblCof11.AutoSize = true;
             lblCof11.Font = new Font("Times New Roman", 15.75F);
-            lblCof11.Location = new Point(128, 107);
+            lblCof11.Location = new Point(128, 104);
             lblCof11.Name = "lblCof11";
             lblCof11.Size = new Size(36, 23);
             lblCof11.TabIndex = 13;
             lblCof11.Text = "C₁₁";
+            lblCof11.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label38
             // 
@@ -3007,11 +2955,12 @@
             // 
             lblC11.BackColor = Color.Transparent;
             lblC11.Font = new Font("Times New Roman", 15.75F);
-            lblC11.Location = new Point(127, 77);
+            lblC11.Location = new Point(127, 74);
             lblC11.Name = "lblC11";
             lblC11.Size = new Size(38, 28);
             lblC11.TabIndex = 9;
             lblC11.Text = "C₁₁";
+            lblC11.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label34
             // 
@@ -3102,11 +3051,11 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label17.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label17.ForeColor = Color.FromArgb(40, 65, 95);
-            label17.Location = new Point(147, 4);
+            label17.Location = new Point(177, 7);
             label17.Name = "label17";
-            label17.Size = new Size(60, 19);
+            label17.Size = new Size(80, 24);
             label17.TabIndex = 3;
             label17.Text = "(adj(A))";
             // 
@@ -3123,15 +3072,15 @@
             // 
             // label18
             // 
-            label18.AutoSize = true;
             label18.Dock = DockStyle.Top;
-            label18.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.Font = new Font("Nirmala UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label18.ForeColor = Color.FromArgb(40, 65, 95);
             label18.Location = new Point(0, 0);
             label18.Name = "label18";
-            label18.Size = new Size(138, 21);
+            label18.Size = new Size(558, 41);
             label18.TabIndex = 2;
             label18.Text = "4. Adjoint Matrix";
+            label18.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label140
             // 
@@ -3143,19 +3092,6 @@
             label140.Text = "C₂₃";
             label140.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label147
-            // 
-            label147.AutoSize = true;
-            label147.BackColor = Color.Transparent;
-            label147.Font = new Font("Times New Roman", 90F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label147.ForeColor = Color.Black;
-            label147.Location = new Point(360, 54);
-            label147.Name = "label147";
-            label147.Size = new Size(97, 136);
-            label147.TabIndex = 123;
-            label147.Text = "]";
-            label147.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // label141
             // 
             label141.Font = new Font("Times New Roman", 18F);
@@ -3165,18 +3101,6 @@
             label141.TabIndex = 124;
             label141.Text = "C₁₃";
             label141.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label146
-            // 
-            label146.BackColor = Color.Transparent;
-            label146.Font = new Font("Times New Roman", 90F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label146.ForeColor = Color.Black;
-            label146.Location = new Point(176, 54);
-            label146.Name = "label146";
-            label146.Size = new Size(59, 135);
-            label146.TabIndex = 119;
-            label146.Text = "[";
-            label146.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label142
             // 
@@ -3220,6 +3144,31 @@
             label144.Text = "C₁₂";
             label144.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // label146
+            // 
+            label146.BackColor = Color.Transparent;
+            label146.Font = new Font("Times New Roman", 90F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label146.ForeColor = Color.Black;
+            label146.Location = new Point(176, 54);
+            label146.Name = "label146";
+            label146.Size = new Size(59, 135);
+            label146.TabIndex = 119;
+            label146.Text = "[";
+            label146.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label147
+            // 
+            label147.AutoSize = true;
+            label147.BackColor = Color.Transparent;
+            label147.Font = new Font("Times New Roman", 90F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label147.ForeColor = Color.Black;
+            label147.Location = new Point(360, 54);
+            label147.Name = "label147";
+            label147.Size = new Size(97, 136);
+            label147.TabIndex = 123;
+            label147.Text = "]";
+            label147.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.BackColor = Color.PaleTurquoise;
@@ -3227,9 +3176,9 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 59.52381F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40.47619F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Controls.Add(pnlIn, 0, 0);
             tableLayoutPanel1.Controls.Add(panel2, 0, 1);
             tableLayoutPanel1.Controls.Add(panel3, 1, 1);
+            tableLayoutPanel1.Controls.Add(pnlIn, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 44);
             tableLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
@@ -3244,6 +3193,7 @@
             // 
             pnlIn.BackColor = Color.Azure;
             tableLayoutPanel1.SetColumnSpan(pnlIn, 2);
+            pnlIn.Controls.Add(btnClr);
             pnlIn.Controls.Add(txtBoxEq3);
             pnlIn.Controls.Add(label28);
             pnlIn.Controls.Add(button2);
@@ -3263,6 +3213,20 @@
             pnlIn.Name = "pnlIn";
             pnlIn.Size = new Size(1898, 65);
             pnlIn.TabIndex = 0;
+            // 
+            // btnClr
+            // 
+            btnClr.BackColor = Color.Azure;
+            btnClr.FlatStyle = FlatStyle.Flat;
+            btnClr.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnClr.Location = new Point(1599, 14);
+            btnClr.Margin = new Padding(3, 2, 3, 2);
+            btnClr.Name = "btnClr";
+            btnClr.Size = new Size(248, 35);
+            btnClr.TabIndex = 15;
+            btnClr.Text = "\t↻ Clear";
+            btnClr.UseVisualStyleBackColor = false;
+            btnClr.Click += btnClr_Click_1;
             // 
             // txtBoxEq3
             // 
@@ -3291,7 +3255,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(1719, 14);
+            button2.Location = new Point(1328, 14);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
             button2.Size = new Size(248, 35);
@@ -3306,14 +3270,13 @@
             button1.BackColor = Color.Azure;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(1990, 14);
+            button1.Location = new Point(2381, 14);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(248, 35);
             button1.TabIndex = 10;
             button1.Text = "\t↻ Clear";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // txtBoxEq2
             // 
@@ -3332,7 +3295,7 @@
             btnSolve.FlatStyle = FlatStyle.Flat;
             btnSolve.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSolve.ForeColor = Color.White;
-            btnSolve.Location = new Point(2362, 6);
+            btnSolve.Location = new Point(2753, 6);
             btnSolve.Margin = new Padding(3, 2, 3, 2);
             btnSolve.Name = "btnSolve";
             btnSolve.Size = new Size(116, 35);
@@ -3347,7 +3310,7 @@
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Nirmala UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnBack.ForeColor = SystemColors.ActiveCaption;
-            btnBack.Location = new Point(2484, 6);
+            btnBack.Location = new Point(2875, 6);
             btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(143, 35);
@@ -3496,7 +3459,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LAE Matrix Solver";
             WindowState = FormWindowState.Maximized;
-            Load += Frm3x3Solved_Load;
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel3.ResumeLayout(false);
@@ -3806,6 +3768,6 @@
         private Label label217;
         private Label label218;
         private Label label215;
-        private Label label29;
+        private Button btnClr;
     }
 }
