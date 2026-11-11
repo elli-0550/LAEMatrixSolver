@@ -340,6 +340,7 @@
             btnSolve.TabIndex = 8;
             btnSolve.Text = "▶  Solve";
             btnSolve.UseVisualStyleBackColor = false;
+            btnSolve.Click += btnSolve_Click;
             // 
             // label5
             // 

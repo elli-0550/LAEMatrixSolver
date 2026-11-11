@@ -113,9 +113,6 @@
             label176 = new Label();
             label217 = new Label();
             panel14 = new Panel();
-            label168 = new Label();
-            label167 = new Label();
-            label166 = new Label();
             SolSys = new Label();
             label26 = new Label();
             panel5 = new Panel();
@@ -1157,7 +1154,7 @@
             label121.AutoSize = true;
             label121.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label121.ForeColor = Color.Black;
-            label121.Location = new Point(53, 423);
+            label121.Location = new Point(76, 455);
             label121.Name = "label121";
             label121.Size = new Size(44, 21);
             label121.TabIndex = 85;
@@ -1294,9 +1291,6 @@
             // panel14
             // 
             panel14.BackColor = Color.Azure;
-            panel14.Controls.Add(label168);
-            panel14.Controls.Add(label167);
-            panel14.Controls.Add(label166);
             panel14.Controls.Add(SolSys);
             panel14.Controls.Add(label26);
             panel14.Dock = DockStyle.Fill;
@@ -1305,39 +1299,6 @@
             panel14.Name = "panel14";
             panel14.Size = new Size(759, 129);
             panel14.TabIndex = 2;
-            // 
-            // label168
-            // 
-            label168.AutoSize = true;
-            label168.BackColor = Color.FromArgb(192, 255, 255);
-            label168.Font = new Font("Times New Roman", 18F);
-            label168.Location = new Point(495, 72);
-            label168.Name = "label168";
-            label168.Size = new Size(22, 27);
-            label168.TabIndex = 92;
-            label168.Text = "z";
-            // 
-            // label167
-            // 
-            label167.AutoSize = true;
-            label167.BackColor = Color.FromArgb(192, 255, 255);
-            label167.Font = new Font("Times New Roman", 18F);
-            label167.Location = new Point(369, 73);
-            label167.Name = "label167";
-            label167.Size = new Size(24, 27);
-            label167.TabIndex = 91;
-            label167.Text = "y";
-            // 
-            // label166
-            // 
-            label166.AutoSize = true;
-            label166.BackColor = Color.FromArgb(192, 255, 255);
-            label166.Font = new Font("Times New Roman", 18F);
-            label166.Location = new Point(240, 74);
-            label166.Name = "label166";
-            label166.Size = new Size(24, 27);
-            label166.TabIndex = 90;
-            label166.Text = "x";
             // 
             // SolSys
             // 
@@ -3468,7 +3429,6 @@
             panel13.ResumeLayout(false);
             panel13.PerformLayout();
             panel14.ResumeLayout(false);
-            panel14.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -3517,7 +3477,6 @@
         private Label label22;
         private Panel panel13;
         private Label label121;
-        private Label label120;
         private Label lblX2;
         private Label lblX1;
         private Label label111;
@@ -3707,9 +3666,6 @@
         private Label label161;
         private Label label165;
         private Label label159;
-        private Label label168;
-        private Label label167;
-        private Label label166;
         private Label label169;
         private Label label103;
         private Label label107;
@@ -3769,5 +3725,6 @@
         private Label label218;
         private Label label215;
         private Button btnClr;
+        private Label label120;
     }
 }

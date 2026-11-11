@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace LAEMatrixSolver
 {
@@ -29,9 +30,9 @@ namespace LAEMatrixSolver
         public Frm3x3Solved()
         {
             InitializeComponent();
-            //2x + 3y - z = 5
-            //7x + y + 2z = 3  
-            //2x + 4y + 5z = 4
+            //2x+3y-z=5
+            //2x+4y+5z=6
+            //7x+y+2z=7
             equation1 = "";
             equation2 = "";
             equation3 = "";
@@ -54,10 +55,20 @@ namespace LAEMatrixSolver
                 }
             }
 
-            // Load after closing the database connection
+            // LOAD EQUATIONS
             txtBoxEq1.Text = equation1;
             txtBoxEq2.Text = equation2;
             txtBoxEq3.Text = equation3;
+
+            // CHECK EQUATIONS
+            if (CheckEquation(equation1) == false ||
+                CheckEquation(equation2) == false ||
+                CheckEquation(equation3) == false)
+            {
+                return;
+            }
+
+            // DISPLAY COEFFICIENT MATRIX AND DETERMINANT
             DisplayCoefficientMatrix();
             DisplayDeterminant();
 
@@ -124,10 +135,8 @@ namespace LAEMatrixSolver
             label129.Text = SimplifyFraction(resultY, determinant);
             label128.Text = SimplifyFraction(resultZ, determinant);
 
-            //STEP 9: DISPLAY FINAL ANSWERS IN FRACTION FORM
-            label166.Text = SimplifyFraction(resultX, determinant);
-            label167.Text = SimplifyFraction(resultY, determinant);
-            label168.Text = SimplifyFraction(resultZ, determinant);
+            // STEP 9: DISPLAY FINAL ANSWERS IN FRACTION FORM
+            SolSys.Text = $"x = {label216.Text}     y = {label129.Text}     z = {label128.Text}";
         }
         private void DisplayInverseMatrix()
         {
@@ -308,8 +317,20 @@ namespace LAEMatrixSolver
             bool hasZ = false;
             bool hasEqual = false;
 
-            equation = equation.Replace(" ", "").ToLower();
+            // CHECK EMPTY EQUATION
+            if (equation.Trim() == "")
+            {
+                MessageBox.Show(
+                    "Please enter an equation.",
+                    "Empty Equation");
 
+                return false;
+            }
+
+            // REMOVE SPACES AND CONVERT TO LOWERCASE
+            equation = Regex.Replace(equation, @"\s+", "").ToLower();
+
+            // CHECK CHARACTERS AND VARIABLES
             for (int i = 0; i < equation.Length; i++)
             {
                 char letter = equation[i];
@@ -326,16 +347,21 @@ namespace LAEMatrixSolver
                 if (letter == '=')
                     hasEqual = true;
 
+                // CHECK INVALID CHARACTERS
                 if (!char.IsDigit(letter) &&
                     letter != 'x' && letter != 'y' &&
                     letter != 'z' && letter != '+' &&
                     letter != '-' && letter != '=' &&
                     letter != '.')
                 {
-                    MessageBox.Show("Invalid character in equation.");
+                    MessageBox.Show(
+                        "Invalid character in equation.",
+                        "Invalid Equation");
+
                     return false;
                 }
 
+                // CHECK MULTIPLICATION BETWEEN VARIABLES
                 if (i < equation.Length - 1)
                 {
                     if ((letter == 'x' || letter == 'y' || letter == 'z') &&
@@ -352,12 +378,55 @@ namespace LAEMatrixSolver
                 }
             }
 
-            if (hasX == false || hasY == false ||
-                hasZ == false || hasEqual == false)
+            // CHECK MISSING VARIABLES
+            if (!hasX || !hasY || !hasZ)
             {
                 MessageBox.Show(
-                    "Please enter a complete equation using x, y, z, and =.",
-                    "Incomplete Equation");
+                    "Please include x, y, and z in your equation.",
+                    "Missing Variable");
+
+                return false;
+            }
+
+            // CHECK MISSING EQUAL SIGN
+            if (!hasEqual)
+            {
+                MessageBox.Show(
+                    "Please include an equal sign (=).",
+                    "Missing Equal Sign");
+
+                return false;
+            }
+
+            // CHECK MULTIPLE EQUAL SIGNS
+            if (equation.Split('=').Length != 2)
+            {
+                MessageBox.Show(
+                    "Please use exactly one equal sign (=).",
+                    "Invalid Equation");
+
+                return false;
+            }
+
+            // CHECK MISSING CONSTANT
+            if (equation.Split('=')[1] == "")
+            {
+                MessageBox.Show(
+                    "Please enter a constant after the equal sign.",
+                    "Missing Constant");
+
+                return false;
+            }
+
+            // CHECK EQUATION STRUCTURE
+            string pattern = @"^[+-]?\d*\.?\d*x[+-]\d*\.?\d*y[+-]\d*\.?\d*z=[+-]?\d+\.?\d*$";
+
+            if (!Regex.IsMatch(equation, pattern))
+            {
+                MessageBox.Show(
+                    "Invalid equation format.\n\n" +
+                    "Correct format: ax + by + cz = d",
+                    "Invalid Equation");
 
                 return false;
             }
@@ -683,9 +752,8 @@ namespace LAEMatrixSolver
             label129.Text = "";
             label128.Text = "";
 
-            label166.Text = "";
-            label167.Text = "";
-            label168.Text = "";
+
+            SolSys.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)

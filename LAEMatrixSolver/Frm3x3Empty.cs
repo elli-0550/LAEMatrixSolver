@@ -54,17 +54,20 @@ namespace LAEMatrixSolver.Properties
 
         private void btnSolve_Click(object sender, EventArgs e)
         {
+            // CHECK EQUATIONS
             if (CheckEquation(txtBoxEq1.Text) == false ||
-               CheckEquation(txtBoxEq2.Text) == false ||
-               CheckEquation(txtBoxEq3.Text) == false)
+                CheckEquation(txtBoxEq2.Text) == false ||
+                CheckEquation(txtBoxEq3.Text) == false)
             {
                 return;
             }
 
+            // SAVE EQUATIONS
             txtBoxEq1_Leave(sender, e);
             txtBoxEq2_Leave(sender, e);
             txtBoxEq3_Leave(sender, e);
 
+            // OPEN SOLVED FORM
             Frm3x3Solved form = new Frm3x3Solved();
 
             this.Hide();
@@ -116,9 +119,6 @@ namespace LAEMatrixSolver.Properties
             if (txtBoxEq1.Text.Trim() == "")
                 return;
 
-            if (CheckEquation(txtBoxEq1.Text) == false)
-                return;
-
             using (SqliteConnection connection = new SqliteConnection(@"Data Source=C:\ProgramData\LAEMatrixSolver\LAEMatrixSolver.db"))
             {
                 connection.Open();
@@ -137,9 +137,6 @@ namespace LAEMatrixSolver.Properties
             if (txtBoxEq2.Text.Trim() == "")
                 return;
 
-            if (CheckEquation(txtBoxEq2.Text) == false)
-                return;
-
             using (SqliteConnection connection = new SqliteConnection(@"Data Source=C:\ProgramData\LAEMatrixSolver\LAEMatrixSolver.db"))
             {
                 connection.Open();
@@ -156,9 +153,6 @@ namespace LAEMatrixSolver.Properties
         private void txtBoxEq3_Leave(object sender, EventArgs e)
         {
             if (txtBoxEq3.Text.Trim() == "")
-                return;
-
-            if (CheckEquation(txtBoxEq3.Text) == false)
                 return;
 
             using (SqliteConnection connection = new SqliteConnection(@"Data Source=C:\ProgramData\LAEMatrixSolver\LAEMatrixSolver.db"))
@@ -181,8 +175,20 @@ namespace LAEMatrixSolver.Properties
             bool hasZ = false;
             bool hasEqual = false;
 
-            equation = equation.Replace(" ", "").ToLower();
+            // CHECK EMPTY EQUATION
+            if (equation.Trim() == "")
+            {
+                MessageBox.Show(
+                    "Please enter an equation.",
+                    "Empty Equation");
 
+                return false;
+            }
+
+            // REMOVE SPACES AND CONVERT TO LOWERCASE
+            equation = Regex.Replace(equation, @"\s+", "").ToLower();
+
+            // CHECK CHARACTERS AND VARIABLES
             for (int i = 0; i < equation.Length; i++)
             {
                 char letter = equation[i];
@@ -199,16 +205,21 @@ namespace LAEMatrixSolver.Properties
                 if (letter == '=')
                     hasEqual = true;
 
+                // CHECK INVALID CHARACTERS
                 if (!char.IsDigit(letter) &&
                     letter != 'x' && letter != 'y' &&
                     letter != 'z' && letter != '+' &&
                     letter != '-' && letter != '=' &&
                     letter != '.')
                 {
-                    MessageBox.Show("Invalid character in equation.");
+                    MessageBox.Show(
+                        "Invalid character in equation.",
+                        "Invalid Equation");
+
                     return false;
                 }
 
+                // CHECK MULTIPLICATION BETWEEN VARIABLES
                 if (i < equation.Length - 1)
                 {
                     if ((letter == 'x' || letter == 'y' || letter == 'z') &&
@@ -225,12 +236,55 @@ namespace LAEMatrixSolver.Properties
                 }
             }
 
-            if (hasX == false || hasY == false ||
-                hasZ == false || hasEqual == false)
+            // CHECK MISSING VARIABLES
+            if (!hasX || !hasY || !hasZ)
             {
                 MessageBox.Show(
-                    "Please enter a complete equation using x, y, z, and =.",
-                    "Incomplete Equation");
+                    "Please include x, y, and z in your equation.",
+                    "Missing Variable");
+
+                return false;
+            }
+
+            // CHECK MISSING EQUAL SIGN
+            if (!hasEqual)
+            {
+                MessageBox.Show(
+                    "Please include an equal sign (=).",
+                    "Missing Equal Sign");
+
+                return false;
+            }
+
+            // CHECK MULTIPLE EQUAL SIGNS
+            if (equation.Split('=').Length != 2)
+            {
+                MessageBox.Show(
+                    "Please use exactly one equal sign (=).",
+                    "Invalid Equation");
+
+                return false;
+            }
+
+            // CHECK MISSING CONSTANT
+            if (equation.Split('=')[1] == "")
+            {
+                MessageBox.Show(
+                    "Please enter a constant after the equal sign.",
+                    "Missing Constant");
+
+                return false;
+            }
+
+            // CHECK EQUATION STRUCTURE
+            string pattern = @"^[+-]?(\d+(\.\d*)?|\.\d+)?x[+-](\d+(\.\d*)?|\.\d+)?y[+-](\d+(\.\d*)?|\.\d+)?z=[+-]?(\d+(\.\d*)?|\.\d+)$";
+
+            if (!Regex.IsMatch(equation, pattern))
+            {
+                MessageBox.Show(
+                    "Invalid equation format.\n\n" +
+                    "Correct format: ax + by + cz = d",
+                    "Invalid Equation");
 
                 return false;
             }

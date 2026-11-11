@@ -25,45 +25,42 @@ namespace LAEMatrixSolver.Properties
         {
             InitializeComponent();
 
+            equation1 = "";
+            equation2 = "";
+
             using (SqliteConnection connection = new SqliteConnection(@"Data Source=C:\ProgramData\LAEMatrixSolver\LAEMatrixSolver.db"))
             {
                 connection.Open();
 
                 string query = "SELECT Equation1, Equation2 FROM CurrentEquation";
 
-                SqliteCommand command = new SqliteCommand(query, connection);
-                SqliteDataReader reader = command.ExecuteReader();
-
-                if (reader.Read())
+                using (SqliteCommand command = new SqliteCommand(query, connection))
+                using (SqliteDataReader reader = command.ExecuteReader())
                 {
-                    equation1 = reader["Equation1"].ToString();
-                    equation2 = reader["Equation2"].ToString();
-
-                    txtBoxEq1.Text = equation1;
-                    txtBoxEq2.Text = equation2;
+                    if (reader.Read())
+                    {
+                        equation1 = reader["Equation1"].ToString();
+                        equation2 = reader["Equation2"].ToString();
+                    }
                 }
+            }
 
-                reader.Close();
+            // LOAD EQUATIONS
+            txtBoxEq1.Text = equation1;
+            txtBoxEq2.Text = equation2;
 
-                try
-                {
-                    DisplayCoefficientMatrix();
-                    DisplayDeterminant();
-                    DisplayCofactorMatrix();
-                    DisplayAdjointMatrix();
-                    DisplayInverseMatrix();
-                    DisplayComputeX();
-                    DisplaySolution();
-                    SaveHistory();
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show(
-                        "Invalid equation format. Please check your inputs.",
-                        "Input Error",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                }
+            // DISPLAY COEFFICIENT MATRIX
+            DisplayCoefficientMatrix();
+            DisplayDeterminant();
+
+            // CHECK DETERMINANT
+            if (determinant != 0)
+            {
+                DisplayCofactorMatrix();
+                DisplayAdjointMatrix();
+                DisplayInverseMatrix();
+                DisplayComputeX();
+                DisplaySolution();
             }
         }
 
@@ -420,48 +417,154 @@ namespace LAEMatrixSolver.Properties
         }
 
         private void DisplaySolution()
-        
+
         {
             SolSys.Text = $"x = {SolX.Text}     y = {SolY.Text}";
         }
 
-        private void SaveHistory()
+        private void btnSolve_Click(object sender, EventArgs e)
         {
-            using (SqliteConnection connection = new SqliteConnection(
-                @"Data Source=C:\ProgramData\LAEMatrixSolver\LAEMatrixSolver.db"))
+            // CHECK EQUATIONS
+            if (CheckEquation(txtBoxEq1.Text) == false ||
+                CheckEquation(txtBoxEq2.Text) == false)
             {
-                connection.Open();
+                return;
+            }
 
-                using (SqliteTransaction transaction = connection.BeginTransaction())
+            // GET LATEST EQUATIONS
+            equation1 = txtBoxEq1.Text;
+            equation2 = txtBoxEq2.Text;
+
+            // DISPLAY COEFFICIENT MATRIX AND DETERMINANT
+            DisplayCoefficientMatrix();
+            DisplayDeterminant();
+
+            // CHECK DETERMINANT
+            if (determinant == 0)
+            {
+                MessageBox.Show(
+                    "The determinant of the coefficient matrix is zero.\n\n" +
+                    "Therefore, the inverse matrix does not exist, and " +
+                    "the system cannot be solved using the Adjoint Method.",
+                    "Cannot Solve System",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
+            // EXECUTE ONLY IF DETERMINANT IS NOT ZERO
+            DisplayCofactorMatrix();
+            DisplayAdjointMatrix();
+            DisplayInverseMatrix();
+            DisplayComputeX();
+            DisplaySolution();
+        }
+
+        private bool CheckEquation(string equation)
+        {
+            bool hasX = false;
+            bool hasY = false;
+            bool hasEqual = false;
+
+            if (equation.Trim() == "")
+            {
+                MessageBox.Show(
+                    "Please enter an equation.",
+                    "Empty Equation");
+
+                return false;
+            }
+
+            equation = Regex.Replace(equation, @"\s+", "").ToLower();
+
+            for (int i = 0; i < equation.Length; i++)
+            {
+                char letter = equation[i];
+
+                if (letter == 'x')
+                    hasX = true;
+
+                if (letter == 'y')
+                    hasY = true;
+
+                if (letter == '=')
+                    hasEqual = true;
+
+                if (!char.IsDigit(letter) &&
+                    letter != 'x' && letter != 'y' &&
+                    letter != '+' && letter != '-' &&
+                    letter != '=' && letter != '.')
                 {
-                    // SAVE EQUATIONS TO HISTORY
-                    string query = @"INSERT INTO History
-                             (Equation1, Equation2, MatrixSize)
-                             VALUES (@eq1, @eq2, 2)";
+                    MessageBox.Show(
+                        "Invalid character in equation.",
+                        "Invalid Equation");
 
-                    using (SqliteCommand command = new SqliteCommand(query, connection, transaction))
+                    return false;
+                }
+
+                if (i < equation.Length - 1)
+                {
+                    if ((letter == 'x' && equation[i + 1] == 'y') ||
+                        (letter == 'y' && equation[i + 1] == 'x'))
                     {
-                        command.Parameters.AddWithValue("@eq1", equation1);
-                        command.Parameters.AddWithValue("@eq2", equation2);
+                        MessageBox.Show(
+                            "Multiplication between variables is not allowed.",
+                            "Invalid Equation");
 
-                        command.ExecuteNonQuery();
+                        return false;
                     }
-
-                    // CLEAR CURRENT EQUATIONS
-                    query = @"UPDATE CurrentEquation
-                      SET Equation1 = NULL,
-                          Equation2 = NULL,
-                          Equation3 = NULL";
-
-                    using (SqliteCommand command = new SqliteCommand(query, connection, transaction))
-                    {
-                        command.ExecuteNonQuery();
-                    }
-
-                    transaction.Commit();
                 }
             }
+
+            if (!hasX || !hasY)
+            {
+                MessageBox.Show(
+                    "Please enter a complete equation using x and y.",
+                    "Missing Variable");
+
+                return false;
+            }
+
+            if (!hasEqual)
+            {
+                MessageBox.Show(
+                    "Please include an equal sign (=) in your equation.",
+                    "Missing Equal Sign");
+
+                return false;
+            }
+
+            if (equation.Split('=').Length != 2)
+            {
+                MessageBox.Show(
+                    "An equation must contain exactly one equal sign.",
+                    "Invalid Equation");
+
+                return false;
+            }
+
+            if (equation.Split('=')[1] == "")
+            {
+                MessageBox.Show(
+                    "Please enter a constant after the equal sign.",
+                    "Missing Constant");
+
+                return false;
+            }
+
+            string pattern = @"^[+-]?\d*\.?\d*x[+-]\d*\.?\d*y=[+-]?\d*\.?\d+$";
+
+            if (!Regex.IsMatch(equation, pattern))
+            {
+                MessageBox.Show(
+                    "Invalid equation format. Please follow the format: ax + by = c.",
+                    "Invalid Equation");
+
+                return false;
+            }
+
+            return true;
         }
-       
     }
 }
